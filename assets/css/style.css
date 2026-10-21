@@ -1,0 +1,41 @@
+:root{--rose:#e8b4b8;--gold:#c9a961;--dark:#2b2b2b;--bg:#faf6f2;}
+*{box-sizing:border-box;}
+body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--dark);margin:0;}
+.login-body{display:flex;justify-content:center;align-items:center;height:100vh;background:linear-gradient(135deg,#faf6f2,#e8b4b8);}
+.login-card{background:#fff;padding:40px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.1);width:360px;text-align:center;}
+.login-card input{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:8px;}
+.login-card button{width:100%;padding:12px;background:var(--gold);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:16px;}
+.layout{display:flex;min-height:100vh;}
+.sidebar{width:240px;background:#fff;padding:24px;box-shadow:2px 0 10px rgba(0,0,0,.05);}
+.sidebar h2{color:var(--gold);}
+.sidebar nav a{display:block;padding:10px 0;color:var(--dark);text-decoration:none;border-bottom:1px solid #eee;}
+.sidebar nav a:hover{color:var(--gold);}
+.content{flex:1;padding:32px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px;}
+.card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 4px 15px rgba(0,0,0,.06);}
+.card h3{color:var(--gold);}
+.stat-row{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0;font-size:14px;}
+.ok{color:#2e7d32;} .warn{color:#ef6c00;} .bad{color:#c62828;}
+.btn{display:inline-block;padding:8px 14px;background:var(--gold);color:#fff;border-radius:8px;text-decoration:none;margin-top:8px;}
+.btn.secondary{background:var(--rose);color:var(--dark);}
+.table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;}
+.table th,.table td{padding:10px;border-bottom:1px solid #eee;text-align:left;font-size:14px;}
+.table th{background:var(--rose);}
+.alert{padding:12px;border-radius:8px;margin:12px 0;}
+.alert.success{background:#e8f5e9;color:#2e7d32;}
+.alert.error{background:#ffebee;color:#c62828;}
+.form-card{background:#fff;padding:20px;border-radius:12px;margin:16px 0;display:flex;flex-direction:column;gap:8px;}
+.form-card input,.form-card textarea,.form-card select{padding:10px;border:1px solid #ddd;border-radius:8px;}
+.inline{margin-bottom:16px;}
+.badge{padding:4px 8px;border-radius:6px;font-size:12px;}
+.badge.pendiente{background:#fff3e0;color:#ef6c00;}
+.badge.confirmado{background:#e8f5e9;color:#2e7d32;}
+.badge.rechazado{background:#ffebee;color:#c62828;}
+.invite-body{display:flex;justify-content:center;align-items:center;min-height:100vh;background:linear-gradient(135deg,#faf6f2,#e8b4b8);}
+.invite-card{background:#fff;padding:40px;border-radius:20px;max-width:520px;width:90%;box-shadow:0 10px 30px rgba(0,0,0,.1);text-align:center;}
+.invite-card h1{color:var(--gold);}
+.invite-card .sub{font-size:18px;color:#666;}
+.invite-card input,.invite-card textarea,.invite-card select{width:100%;padding:10px;margin:8px 0;border:1px solid #ddd;border-radius:8px;}
+.invite-card button{width:100%;padding:12px;background:var(--gold);color:#fff;border:none;border-radius:8px;cursor:pointer;}
+PHP
+echo done
