@@ -50,5 +50,3 @@ CREATE TABLE IF NOT EXISTS configuracion (
 -- Usuario admin por defecto: admin / admin123 (cambiar en producción)
 INSERT INTO usuarios_admin (nombre, usuario, contrasena, rol)
 VALUES ('Administrador', 'admin', '$2y$12$aZGGmNusaagScheE4q/Uqulzv5f.hLWMMVExpAe5NtQR2mOchcWQu', 'admin');
-EOF
-echo done
