@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Gabriela &amp; Sixinio — Nuestra Boda</title>
+    <!-- Google Fonts: Cormorant Garamond, Great Vibes, Montserrat & Alex Brush -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&amp;family=Montserrat:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind CSS v3 with Forms Plugin -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <!-- Tailwind Configuration -->
+    <script data-purpose="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: {
+                            DEFAULT: '#B85323',
+                            dark: '#934018',
+                            light: '#C96839',
+                            muted: '#FAF0E8'
+                        },
+                        olive: {
+                            DEFAULT: '#6B7A58',
+                            dark: '#2F483D',
+                            light: '#8E9C7B'
+                        },
+                        mustard: {
+                            DEFAULT: '#D49A3D',
+                            light: '#F5E7CC'
+                        },
+                        ivory: {
+                            DEFAULT: '#FDFBF7',
+                            surface: '#F7F3EB'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        script: ['"Alex Brush"', '"Great Vibes"', 'cursive'],
+                        editorial: ['"Playfair Display"', 'serif'],
+                        sans: ['"Montserrat"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- BEGIN: Custom Styles -->
+    <style data-purpose="typography-and-decorations">
+        .text-script-shadow {
+            text-shadow: 1px 1px 0px rgba(184, 83, 35, 0.2);
+        }
+
+        .floral-bg-corner-top {
+            background: radial-gradient(circle at 100% 0%, rgba(212, 154, 61, 0.15) 0%, rgba(184, 83, 35, 0.08) 35%, transparent 70%);
+        }
+
+        .floral-bg-corner-bottom {
+            background: radial-gradient(circle at 0% 100%, rgba(107, 122, 88, 0.15) 0%, rgba(212, 154, 61, 0.08) 40%, transparent 70%);
+        }
+
+        .border-delicate {
+            border-color: rgba(47, 72, 61, 0.25);
+        }
+    </style>
+    <style data-purpose="animations">
+        @keyframes gentlePulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.03);
+            }
+        }
+
+        .animate-gentle {
+            animation: gentlePulse 4s infinite ease-in-out;
+        }
+    </style>
+    <!-- END: Custom Styles -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="bg-ivory text-neutral-800 font-sans selection:bg-terracotta selection:text-white antialiased min-h-screen">
+    <!-- BEGIN: PageWrapper -->
+    <div
+        class="max-w-xl mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden flex flex-col border-x border-[#EFE9DE]">
+        <!-- Decorative Top Floral Banner Canvas / Graphic -->
+        <div class="relative w-full overflow-hidden pointer-events-none select-none"
+            data-purpose="decorative-header-art">
+            <svg class="w-full h-44 sm:h-52 text-terracotta" preserveaspectratio="xMaxYMin meet"
+                viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <radialGradient cx="50%" cy="50%" id="petalGradRosa" r="60%">
+                        <stop offset="0%" stop-color="#EFA98F" stop-opacity="0.95"></stop>
+                        <stop offset="55%" stop-color="#C96B44" stop-opacity="0.85"></stop>
+                        <stop offset="100%" stop-color="#934018" stop-opacity="0.8"></stop>
+                    </radialGradient>
+                    <radialGradient cx="50%" cy="50%" id="petalGradPeach" r="60%">
+                        <stop offset="0%" stop-color="#F7C04A" stop-opacity="0.95"></stop>
+                        <stop offset="60%" stop-color="#D49A3D" stop-opacity="0.85"></stop>
+                        <stop offset="100%" stop-color="#B85323" stop-opacity="0.75"></stop>
+                    </radialGradient>
+                    <radialGradient cx="42%" cy="40%" id="petalGradCream" r="65%">
+                        <stop offset="0%" stop-color="#FBE9DC" stop-opacity="0.98"></stop>
+                        <stop offset="70%" stop-color="#EAA66E" stop-opacity="0.9"></stop>
+                        <stop offset="100%" stop-color="#B85323" stop-opacity="0.8"></stop>
+                    </radialGradient>
+                    <linearGradient id="leafGradReal" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="#8FA981" stop-opacity="0.95"></stop>
+                        <stop offset="45%" stop-color="#6B7A58" stop-opacity="0.95"></stop>
+                        <stop offset="100%" stop-color="#43543E" stop-opacity="0.95"></stop>
+                    </linearGradient>
+                    <linearGradient id="stemGradReal" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#7A8A67"></stop>
+                        <stop offset="100%" stop-color="#4F6449"></stop>
+                    </linearGradient>
+                </defs>
+
+                <!-- ===================== TALLOS Y FOLLAJE (esquina derecha) ===================== -->
+                <g stroke-linecap="round" fill="none">
+                    <path d="M500 60 C 460 85, 420 105, 355 118" stroke="url(#stemGradReal)" stroke-width="3" opacity="0.9"></path>
+                    <path d="M500 100 C 465 115, 430 128, 385 140 C 360 147, 330 150, 300 147" stroke="url(#stemGradReal)" stroke-width="2.4" opacity="0.85"></path>
+                    <path d="M490 30 C 462 48, 434 60, 396 62 C 368 64, 342 60, 318 50" stroke="url(#stemGradReal)" stroke-width="2.2" opacity="0.8"></path>
+                    <!-- Ramas de eucalipto -->
+                    <path d="M500 140 C 462 142, 430 152, 398 170" stroke="#7A8A67" stroke-width="2" opacity="0.8"></path>
+                    <path d="M500 175 C 470 172, 444 162, 418 146" stroke="#7A8A67" stroke-width="2" opacity="0.7"></path>
+                </g>
+
+                <!-- Hojas de eucalipto orgánicas -->
+                <g fill="#849474">
+                    <ellipse cx="452" cy="152" rx="11" ry="6.5" opacity="0.85" transform="rotate(-32 452 152)"></ellipse>
+                    <ellipse cx="470" cy="143" rx="12" ry="7" opacity="0.8" transform="rotate(-18 470 143)"></ellipse>
+                    <ellipse cx="436" cy="161" rx="10" ry="6" opacity="0.75" transform="rotate(-45 436 161)"></ellipse>
+                    <ellipse cx="480" cy="166" rx="11" ry="6.5" opacity="0.8" transform="rotate(30 480 166)"></ellipse>
+                    <ellipse cx="460" cy="171" rx="10" ry="6" opacity="0.7" transform="rotate(15 460 171)"></ellipse>
+                </g>
+
+                <!-- Hojas acuarela con nervadura -->
+                <g>
+                    <path d="M376 52 C 396 42, 424 40, 446 44 C 428 56, 400 62, 378 58 C 374 56, 374 54, 376 52 Z" fill="url(#leafGradReal)" opacity="0.9"></path>
+                    <path d="M380 55 C 400 51, 424 47, 442 45" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.7"></path>
+                    <path d="M398 52 L 396 44 M 414 49 L 414 41 M 430 47 L 432 41" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.5"></path>
+
+                    <path d="M352 96 C 372 92, 400 96, 418 106 C 396 114, 370 114, 354 106 C 348 102, 348 99, 352 96 Z" fill="url(#leafGradReal)" opacity="0.85"></path>
+                    <path d="M356 101 C 378 102, 398 104, 414 107" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.65"></path>
+                    <path d="M374 101 L 375 96 M 390 104 L 392 98 M 404 106 L 408 101" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.45"></path>
+
+                    <path d="M330 140 C 350 128, 380 122, 406 124 C 386 136, 356 144, 336 146 C 328 145, 326 143, 330 140 Z" fill="url(#leafGradReal)" opacity="0.8"></path>
+                    <path d="M334 142 C 358 134, 382 128, 402 125" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.6"></path>
+                    <path d="M354 136 L 356 130 M 374 131 L 378 125 M 392 127 L 396 122" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.45"></path>
+
+                    <!-- Hoja en ángulo hacia arriba -->
+                    <path d="M470 30 C 458 18, 444 10, 426 6 C 442 18, 456 28, 470 34 C 472 34, 472 32, 470 30 Z" fill="url(#leafGradReal)" opacity="0.85"></path>
+                </g>
+
+                <!-- ===================== ROSA GRANDE (pinza superior) ===================== -->
+                <g>
+                    <!-- Pétalos traseros -->
+                    <path d="M368 92 C 356 76, 360 56, 376 44 C 380 60, 382 76, 378 92 C 376 96, 372 96, 368 92 Z" fill="url(#petalGradRosa)" opacity="0.85"></path>
+                    <path d="M382 94 C 380 74, 388 52, 404 40 C 408 60, 402 80, 392 96 C 388 100, 384 100, 382 94 Z" fill="url(#petalGradRosa)" opacity="0.9"></path>
+                    <!-- Capa de pétalos central -->
+                    <path d="M370 90 C 362 72, 370 52, 388 44 C 400 56, 402 76, 394 92 C 388 98, 376 98, 370 90 Z" fill="url(#petalGradCream)" opacity="0.9"></path>
+                    <!-- Pétalos frontales con borde ondulado -->
+                    <path d="M366 88 C 358 82, 354 70, 360 60 C 368 50, 380 46, 390 50 C 386 62, 380 76, 374 88 C 372 92, 368 92, 366 88 Z" fill="url(#petalGradRosa)" opacity="0.72"></path>
+                    <path d="M396 88 C 402 80, 406 68, 402 56 C 396 48, 386 46, 380 48 C 386 62, 390 76, 390 86 C 392 92, 394 92, 396 88 Z" fill="url(#petalGradRosa)" opacity="0.72"></path>
+                    <!-- Centro de la rosa: espiral -->
+                    <circle cx="382" cy="68" r="6.5" fill="#5F3316" opacity="0.9"></circle>
+                    <circle cx="382" cy="68" r="3.5" fill="#3D1E0A" opacity="0.95"></circle>
+                    <g stroke="#F7C04A" stroke-width="1.1" fill="none" opacity="0.85">
+                        <path d="M377 70 C 379 66, 385 65, 387 69"></path>
+                        <path d="M378 66 C 382 64, 386 66, 386 70"></path>
+                    </g>
+                    <!-- Estambres -->
+                    <g stroke="#B85323" stroke-width="0.9" fill="#F7C04A" opacity="0.9">
+                        <line x1="376" y1="74" x2="372" y2="79"></line><circle cx="371.5" cy="80" r="1.1"></circle>
+                        <line x1="388" y1="74" x2="392" y2="79"></line><circle cx="393" cy="80" r="1.1"></circle>
+                        <line x1="374" y1="62" x2="370" y2="58"></line><circle cx="369.5" cy="57" r="1.1"></circle>
+                        <line x1="390" y1="60" x2="393" y2="56"></line><circle cx="393.5" cy="55" r="1.1"></circle>
+                    </g>
+                </g>
+
+                <!-- ===================== ROSA AMARILLA/MELOCOTÓN (media, derecha) ===================== -->
+                <g>
+                    <path d="M436 96 C 426 86, 428 70, 440 62 C 450 56, 462 58, 468 66 C 470 76, 464 88, 452 94 C 446 98, 440 98, 436 96 Z" fill="url(#petalGradPeach)" opacity="0.85"></path>
+                    <path d="M442 88 C 436 78, 440 68, 448 64 C 454 62, 460 64, 462 70 C 462 78, 456 84, 448 88 C 444 90, 444 90, 442 88 Z" fill="url(#petalGradCream)" opacity="0.9"></path>
+                    <circle cx="452" cy="76" r="5" fill="#5A240C" opacity="0.9"></circle>
+                    <circle cx="452" cy="76" r="2.6" fill="#3C1A09"></circle>
+                    <g stroke="#F7C04A" stroke-width="0.9" fill="none" opacity="0.85">
+                        <path d="M448 78 C 450 75, 454 75, 456 78"></path>
+                    </g>
+                    <g stroke="#934018" stroke-width="0.8" fill="#F7C04A" opacity="0.85">
+                        <line x1="446" y1="80" x2="443" y2="83"></line><circle cx="442.5" cy="84" r="1"></circle>
+                        <line x1="458" y1="80" x2="461" y2="83"></line><circle cx="461.5" cy="84" r="1"></circle>
+                        <line x1="452" y1="70" x2="452" y2="66"></line><circle cx="452" cy="65" r="1"></circle>
+                    </g>
+                </g>
+
+                <!-- ===================== BOTÓN CERRADO (arriba, izquierda) ===================== -->
+                <g>
+                    <path d="M340 42 C 336 32, 340 20, 350 14 C 354 12, 358 13, 360 16 C 364 26, 362 36, 352 43 C 348 46, 344 46, 340 42 Z" fill="url(#petalGradPeach)" opacity="0.9"></path>
+                    <path d="M348 40 C 344 32, 345 24, 350 18 C 353 16, 355 16, 356 19 C 357 27, 355 33, 350 40 C 349 42, 348 42, 348 40 Z" fill="url(#petalGradCream)" opacity="0.85"></path>
+                    <!-- Cáliz verde -->
+                    <path d="M344 42 C 340 46, 336 50, 332 51 C 336 55, 342 55, 346 52 C 350 55, 356 55, 360 51 C 356 50, 350 47, 348 43 Z" fill="url(#leafGradReal)" opacity="0.95"></path>
+                </g>
+
+                <!-- ===================== BOTÓN PEQUEÑO (derecha, abajo) ===================== -->
+                <g>
+                    <path d="M418 118 C 414 112, 415 104, 421 100 C 425 98, 429 99, 431 102 C 433 108, 430 114, 424 118 C 421 120, 420 120, 418 118 Z" fill="url(#petalGradPeach)" opacity="0.85"></path>
+                    <path d="M423 114 C 420 110, 420 106, 423 103 C 425 102, 427 103, 427 105 C 427 108, 426 111, 424 114 Z" fill="url(#petalGradCream)" opacity="0.85"></path>
+                    <path d="M419 118 C 417 121, 414 123, 411 124 C 414 126, 418 126, 421 124 C 424 126, 428 126, 431 123 C 428 122, 424 120, 423 118 Z" fill="url(#leafGradReal)" opacity="0.9"></path>
+                </g>
+
+                <!-- ===================== FLORES BLANCO-CREMA PEQUEÑAS (flores silvestres) ===================== -->
+                <g>
+                    <g transform="translate(310, 74)">
+                        <ellipse cx="0" cy="-11" rx="6" ry="10" transform="rotate(-24)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
+                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
+                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(28)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
+                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(16)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
+                        <circle cx="0" cy="0" r="3.6" fill="#D49A3D" opacity="0.95"></circle>
+                    </g>
+                    <g transform="translate(296, 46)">
+                        <ellipse cx="0" cy="-8" rx="4.5" ry="7.5" transform="rotate(-22)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
+                        <ellipse cx="7.5" cy="-2" rx="7.5" ry="4.5" transform="rotate(-16)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
+                        <ellipse cx="2" cy="7.5" rx="4.5" ry="7.5" transform="rotate(24)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
+                        <ellipse cx="-7.5" cy="2" rx="7.5" ry="4.5" transform="rotate(14)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
+                        <circle cx="0" cy="0" r="2.8" fill="#B85323" opacity="0.9"></circle>
+                    </g>
+                </g>
+
+                <!-- Pétalos sueltos flotando (efecto acuarela) -->
+                <g fill="url(#petalGradPeach)" opacity="0.4">
+                    <ellipse cx="290" cy="110" rx="7" ry="4" transform="rotate(-25 290 110)"></ellipse>
+                    <ellipse cx="268" cy="70" rx="6" ry="3.5" transform="rotate(20 268 70)"></ellipse>
+                    <ellipse cx="310" cy="132" rx="6" ry="3.5" transform="rotate(-40 310 132)"></ellipse>
+                </g>
+            </svg>
+        </div>
+        <!-- BEGIN: HeroSection -->
+        <header class="px-6 sm:px-10 text-center relative z-10 -mt-10 sm:-mt-12" data-purpose="hero-section">
+            <!-- Spiritual / Romantic Quote -->
+            <div class="max-w-xs mx-auto mb-8 text-neutral-600 font-serif italic text-base sm:text-lg leading-relaxed">
+                <p>“No es casualidad que nuestros caminos se hayan encontrado, Dios ha tejido hilos de oro entre
+                    nosotros.”</p>
+            </div>
+            <!-- Monogram -->
+            <div class="inline-flex items-center justify-center space-x-3 text-terracotta font-serif text-5xl sm:text-6xl tracking-widest font-normal mb-6"
+                data-purpose="monogram">
+                <span>G</span>
+                <span class="text-terracotta-dark font-light text-4xl sm:text-5xl -mt-1 font-sans">|</span>
+                <span>S</span>
+            </div>
+            <!-- Wedding Announcement Header -->
+            <h2 class="text-olive-dark tracking-[0.22em] text-sm sm:text-base uppercase font-medium font-sans mb-8">
+                ¡Nos Casamos!
+            </h2>
+            <!-- Linked Wedding Rings Icon in Terracotta Fine Line -->
+            <div class="flex justify-center mb-6" data-purpose="interlinked-rings-icon">
+                <svg class="w-16 h-16 text-terracotta animate-gentle stroke-current fill-none" stroke-width="1.8"
+                    viewbox="0 0 80 80">
+                    <!-- Solitaire Diamond on first ring -->
+                    <polygon class="fill-mustard-light stroke-terracotta" points="43,21 47,15 53,15 57,21 50,25"
+                        stroke-width="1.5"></polygon>
+                    <line stroke-width="1.2" x1="43" x2="57" y1="21" y2="21"></line>
+                    <!-- First Ring -->
+                    <circle cx="50" cy="38" r="19" stroke-dasharray="120"></circle>
+                    <!-- Second Interlocking Ring -->
+                    <circle cx="33" cy="45" r="19"></circle>
+                    <path d="M37 28 A 19 19 0 0 1 48 33" stroke-linecap="round" stroke-width="2.2"></path>
+                </svg>
+            </div>
+            <!-- Couple Names in romantic Calligraphy -->
+            <div class="space-y-0 mb-6" data-purpose="couple-names">
+                <h1
+                    class="font-script text-6xl sm:text-7xl text-terracotta font-normal leading-tight text-script-shadow">
+                    Gabriela
+                </h1>
+                <div class="font-script text-4xl sm:text-5xl text-terracotta leading-none my-1">
+                    &amp;
+                </div>
+                <h1
+                    class="font-script text-6xl sm:text-7xl text-terracotta font-normal leading-tight text-script-shadow">
+                    Sixinio
+                </h1>
+            </div>
+            <!-- Subtitle -->
+            <p class="font-serif italic text-lg sm:text-xl text-neutral-600 mb-8">
+                Te invitamos a celebrar nuestra boda
+            </p>
+            <!-- Wedding Date Layout (Matches physical invitation: MAYO with arched arc / SÁBADO | 09 | 2026) -->
+            <div class="max-w-md mx-auto my-8 border-t border-b border-delicate py-6" data-purpose="date-display">
+                <div class="text-center mb-1">
+                    <span
+                        class="font-editorial uppercase tracking-[0.25em] text-neutral-700 text-lg sm:text-xl font-medium inline-block transform -rotate-1">
+                        D I C I E M B R E
+                    </span>
+                </div>
+                <div class="grid grid-cols-3 items-center text-center">
+                    <div
+                        class="font-sans text-xs sm:text-sm tracking-widest text-neutral-600 uppercase border-r border-delicate py-1">
+                        Sábado
+                    </div>
+                    <div
+                        class="font-serif text-5xl sm:text-6xl text-terracotta font-normal leading-none tracking-tight">
+                        26
+                    </div>
+                    <div
+                        class="font-sans text-xs sm:text-sm tracking-widest text-neutral-600 border-l border-delicate py-1">
+                        2026
+                    </div>
+                </div>
+            </div>
+            <!-- Live Countdown Timer -->
+            <div class="mt-6 mb-12 bg-ivory-surface p-4 sm:p-5 rounded-xl border border-[#ECE4D5]"
+                data-purpose="countdown-timer">
+                <p class="font-sans text-xs uppercase tracking-widest text-olive mb-3 font-semibold">
+                    Faltan para el gran día
+                </p>
+                <div class="grid grid-cols-4 gap-2 text-center" id="countdown-container">
+                    <div class="bg-white rounded-lg py-2 shadow-xs border border-[#E9E1D2]">
+                        <span class="block font-serif text-2xl sm:text-3xl text-terracotta font-semibold"
+                            id="days">--</span>
+                        <span class="block text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider">Días</span>
+                    </div>
+                    <div class="bg-white rounded-lg py-2 shadow-xs border border-[#E9E1D2]">
+                        <span class="block font-serif text-2xl sm:text-3xl text-terracotta font-semibold"
+                            id="hours">--</span>
+                        <span class="block text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider">Hs</span>
+                    </div>
+                    <div class="bg-white rounded-lg py-2 shadow-xs border border-[#E9E1D2]">
+                        <span class="block font-serif text-2xl sm:text-3xl text-terracotta font-semibold"
+                            id="minutes">--</span>
+                        <span class="block text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider">Min</span>
+                    </div>
+                    <div class="bg-white rounded-lg py-2 shadow-xs border border-[#E9E1D2]">
+                        <span class="block font-serif text-2xl sm:text-3xl text-terracotta font-semibold"
+                            id="seconds">--</span>
+                        <span class="block text-[10px] sm:text-xs text-neutral-500 uppercase tracking-wider">Seg</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- END: HeroSection -->
+        <!-- BEGIN: ItinerarySection -->
+        <section class="px-6 sm:px-10 py-8 relative bg-white" data-purpose="ceremony-details">
+            <!-- Decorative Side Botanical SVGs -->
+            <div class="absolute -left-6 top-8 w-24 opacity-60 pointer-events-none select-none">
+                <svg class="w-full text-olive" fill="none" viewBox="0 0 100 200">
+                    <path d="M20 20 Q 50 70 30 140 T 70 200" fill="none" stroke="#8E9C7B" stroke-width="2"></path>
+                    <!-- Flor 1: cinco pétalos reales -->
+                    <g transform="translate(22 30)">
+                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(-30)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="9" cy="-3" rx="9" ry="5.5" transform="rotate(-20)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="3" cy="9" rx="5.5" ry="9" transform="rotate(28)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="-9" cy="2" rx="9" ry="5.5" transform="rotate(16)" fill="#B85323" opacity="0.75"></ellipse>
+                        <circle cx="0" cy="0" r="3" fill="#D49A3D" opacity="0.95"></circle>
+                        <g stroke="#934018" stroke-width="0.7" opacity="0.8">
+                            <line x1="0" y1="-3" x2="-1" y2="-5"></line>
+                            <line x1="3" y1="-1" x2="5" y2="-3"></line>
+                            <line x1="0" y1="3" x2="1" y2="5"></line>
+                        </g>
+                    </g>
+                    <!-- Hoja entre flores -->
+                    <path d="M36 56 C 44 52, 54 52, 60 56 C 52 62, 42 61, 36 56 Z" fill="#6B7A58" opacity="0.8"></path>
+                    <!-- Flor 2 -->
+                    <g transform="translate(48 72)">
+                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(-26)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="8" cy="-3" rx="8" ry="5" transform="rotate(-18)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="3" cy="8" rx="5" ry="8" transform="rotate(24)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="-8" cy="2" rx="8" ry="5" transform="rotate(14)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <circle cx="0" cy="0" r="2.8" fill="#934018" opacity="0.95"></circle>
+                    </g>
+                    <!-- Capullo -->
+                    <path d="M24 100 C 21 94, 22 86, 28 82 C 30 81, 33 82, 33 85 C 34 92, 32 98, 27 101 C 26 101, 25 101, 24 100 Z" fill="#B85323" opacity="0.7"></path>
+                    <path d="M24 101 C 22 104, 20 106, 17 107 C 20 109, 24 109, 26 107 C 28 109, 32 109, 35 106 C 31 105, 27 104, 26 101 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <!-- Flor 3 -->
+                    <g transform="translate(25 110)">
+                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(15)" fill="#B85323" opacity="0.75"></ellipse>
+                        <circle cx="0" cy="0" r="3.4" fill="#D49A3D" opacity="0.95"></circle>
+                    </g>
+                    <!-- Hoja baja -->
+                    <path d="M44 138 C 54 134, 64 134, 70 140 C 60 145, 50 144, 44 138 Z" fill="#6B7A58" opacity="0.8"></path>
+                    <!-- Flor 4 -->
+                    <g transform="translate(55 165)">
+                        <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(-24)" fill="#8E9C7B" opacity="0.85"></ellipse>
+                        <ellipse cx="7" cy="-3" rx="7" ry="4.5" transform="rotate(-16)" fill="#8E9C7B" opacity="0.85"></ellipse>
+                        <ellipse cx="3" cy="7" rx="4.5" ry="7" transform="rotate(22)" fill="#8E9C7B" opacity="0.85"></ellipse>
+                        <ellipse cx="-7" cy="2" rx="7" ry="4.5" transform="rotate(13)" fill="#8E9C7B" opacity="0.85"></ellipse>
+                        <circle cx="0" cy="0" r="2.6" fill="#D49A3D" opacity="0.9"></circle>
+                    </g>
+                </svg>
+            </div>
+            <div class="absolute -right-6 top-64 w-24 opacity-60 pointer-events-none select-none">
+                <svg class="w-full text-olive" fill="none" viewBox="0 0 100 200">
+                    <path d="M80 10 Q 40 70 70 130 T 30 190" fill="none" stroke="#8E9C7B" stroke-width="2"></path>
+                    <!-- Flor 1 -->
+                    <g transform="translate(75 25)">
+                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(28)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="-9" cy="-3" rx="9" ry="5.5" transform="rotate(18)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="-3" cy="9" rx="5.5" ry="9" transform="rotate(-26)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="9" cy="2" rx="9" ry="5.5" transform="rotate(-15)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <circle cx="0" cy="0" r="3" fill="#B85323" opacity="0.95"></circle>
+                    </g>
+                    <!-- Hoja -->
+                    <path d="M62 50 C 54 46, 44 46, 38 50 C 46 56, 56 55, 62 50 Z" fill="#6B7A58" opacity="0.8"></path>
+                    <!-- Flor 2 (grande) -->
+                    <g transform="translate(45 80)">
+                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="-10" cy="-3" rx="10" ry="6" transform="rotate(17)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="-3" cy="10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="10" cy="2" rx="10" ry="6" transform="rotate(-14)" fill="#B85323" opacity="0.75"></ellipse>
+                        <circle cx="0" cy="0" r="3.4" fill="#D49A3D" opacity="0.95"></circle>
+                        <g stroke="#934018" stroke-width="0.7" opacity="0.8">
+                            <line x1="0" y1="-3" x2="-1" y2="-5"></line>
+                            <line x1="-3" y1="-1" x2="-5" y2="-3"></line>
+                            <line x1="0" y1="3" x2="1" y2="5"></line>
+                        </g>
+                    </g>
+                    <!-- Capullo -->
+                    <path d="M74 124 C 76 117, 75 110, 70 106 C 68 105, 65 106, 65 109 C 64 116, 66 122, 71 125 C 72 125, 73 125, 74 124 Z" fill="#B85323" opacity="0.7"></path>
+                    <path d="M74 125 C 76 128, 78 130, 81 131 C 78 133, 74 133, 72 131 C 70 133, 66 133, 63 130 C 67 129, 71 128, 72 125 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <!-- Flor 3 -->
+                    <g transform="translate(72 135)">
+                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(26)" fill="#B85323" opacity="0.7"></ellipse>
+                        <ellipse cx="-8" cy="-3" rx="8" ry="5" transform="rotate(16)" fill="#B85323" opacity="0.7"></ellipse>
+                        <ellipse cx="-3" cy="8" rx="5" ry="8" transform="rotate(-24)" fill="#B85323" opacity="0.7"></ellipse>
+                        <ellipse cx="8" cy="2" rx="8" ry="5" transform="rotate(-14)" fill="#B85323" opacity="0.7"></ellipse>
+                        <circle cx="0" cy="0" r="2.8" fill="#D49A3D" opacity="0.9"></circle>
+                    </g>
+                    <!-- Hoja baja -->
+                    <path d="M52 162 C 42 158, 32 158, 26 164 C 36 169, 46 168, 52 162 Z" fill="#6B7A58" opacity="0.8"></path>
+                </svg>
+            </div>
+            <!-- Title: Ceremonia Civil -->
+            <div class="text-center mb-8 relative z-10">
+                <h3 class="font-script text-5xl sm:text-6xl text-neutral-800 leading-none mb-4">
+                    Ceremonia Civil
+                </h3>
+                <!-- Car with Cans Icon -->
+                <div class="flex justify-center my-3" data-purpose="vintage-car-icon">
+                    <svg class="w-20 h-20 text-terracotta stroke-current fill-none" stroke-width="1.8"
+                        viewbox="0 0 100 100">
+                        <!-- Vintage Wedding Car Outline -->
+                        <path
+                            d="M28 42 C 30 32, 40 22, 50 22 C 60 22, 70 32, 72 42 L 78 48 C 82 52, 82 62, 78 68 L 22 68 C 18 62, 18 52, 22 48 Z">
+                        </path>
+                        <!-- Back Window -->
+                        <path d="M34 40 C 37 32, 45 28, 50 28 C 55 28, 63 32, 66 40 Z"></path>
+                        <!-- Couple Silhouettes in Window -->
+                        <circle cx="44" cy="35" fill="currentColor" r="3.5"></circle>
+                        <circle cx="56" cy="35" fill="currentColor" r="3.5"></circle>
+                        <!-- JUST MARRIED Sign -->
+                        <rect class="fill-white" height="12" rx="2" stroke-width="1.4" width="28" x="36" y="47"></rect>
+                        <text class="fill-terracotta font-sans font-bold" font-size="4" stroke="none"
+                            text-anchor="middle" x="50" y="53">JUST</text>
+                        <text class="fill-terracotta font-sans font-bold" font-size="4" stroke="none"
+                            text-anchor="middle" x="50" y="57">MARRIED</text>
+                        <!-- Tail Lights -->
+                        <circle cx="26" cy="55" r="2.5"></circle>
+                        <circle cx="74" cy="55" r="2.5"></circle>
+                        <!-- Bumper -->
+                        <path d="M20 66 L 80 66" stroke-linecap="round" stroke-width="3"></path>
+                        <!-- Hanging Strings & Tin Cans -->
+                        <path d="M35 68 C 34 76, 30 80, 26 86" stroke-dasharray="2 2" stroke-width="1.2"></path>
+                        <path d="M42 68 C 42 77, 39 83, 37 90" stroke-dasharray="2 2" stroke-width="1.2"></path>
+                        <path d="M50 68 C 50 78, 50 83, 50 92" stroke-dasharray="2 2" stroke-width="1.2"></path>
+                        <path d="M58 68 C 58 77, 61 83, 63 90" stroke-dasharray="2 2" stroke-width="1.2"></path>
+                        <path d="M65 68 C 66 76, 70 80, 74 86" stroke-dasharray="2 2" stroke-width="1.2"></path>
+                        <!-- Cans -->
+                        <rect height="8" rx="1" width="6" x="23" y="86"></rect>
+                        <rect height="8" rx="1" width="6" x="34" y="90"></rect>
+                        <rect height="8" rx="1" width="6" x="47" y="92"></rect>
+                        <rect height="8" rx="1" width="6" x="60" y="90"></rect>
+                        <rect height="8" rx="1" width="6" x="71" y="86"></rect>
+                    </svg>
+                </div>
+                <div class="space-y-1 mb-6">
+                    <p class="font-serif text-2xl text-neutral-800 tracking-wide font-normal uppercase">
+                        Colegio Japones Sakura
+                    </p>
+                    <p class="font-serif text-xl text-neutral-600 italic">
+                        Limpio, Paraguay
+                    </p>
+                    <p class="font-sans font-medium text-lg text-neutral-800 pt-1 tracking-wider">
+                        20:00 Hs.
+                    </p>
+                </div>
+                <!-- Google Maps Link Button -->
+                <a class="inline-block bg-terracotta hover:bg-terracotta-dark text-white font-sans text-xs tracking-[0.2em] uppercase font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 active:translate-y-0"
+                    href="https://maps.app.goo.gl/2dtjbAao8mDtZct87" rel="noopener noreferrer" target="_blank">
+                    Cómo Llegar
+                </a>
+            </div>
+            <!-- Toast & Celebration Details -->
+            <div class="text-center my-12 border-t border-[#ECE4D5] pt-10 relative z-10" data-purpose="toast-section">
+                <!-- Champagne Flutes Icon -->
+                <div class="flex justify-center mb-3">
+                    <svg class="w-16 h-16 text-terracotta stroke-current fill-none" stroke-width="1.6"
+                        viewbox="0 0 80 80">
+                        <!-- Left Glass -->
+                        <path d="M30 18 L 38 38 C 38 43, 34 46, 32 48 L 32 60 L 26 60 M 32 60 L 38 60"></path>
+                        <path d="M26 18 C 26 18, 30 16, 34 18"></path>
+                        <!-- Right Glass tilted -->
+                        <path d="M50 18 L 42 38 C 42 43, 46 46, 48 48 L 48 60 L 42 60 M 48 60 L 54 60"></path>
+                        <path d="M46 18 C 46 18, 50 16, 54 18"></path>
+                        <!-- Bubbles / Clinking spark -->
+                        <circle class="fill-mustard text-mustard" cx="40" cy="24" r="1.5"></circle>
+                        <circle class="fill-mustard text-mustard" cx="40" cy="30" r="1.2"></circle>
+                        <circle class="fill-mustard text-mustard" cx="36" cy="27" r="1"></circle>
+                        <circle class="fill-mustard text-mustard" cx="44" cy="27" r="1"></circle>
+                        <!-- Ribbon tied on glass -->
+                        <path d="M29 49 C 27 52, 23 54, 25 57 C 28 56, 30 52, 33 50"></path>
+                        <path d="M51 49 C 53 52, 57 54, 55 57 C 52 56, 50 52, 47 50"></path>
+                    </svg>
+                </div>
+                <p class="font-serif text-lg sm:text-xl text-neutral-700 max-w-xs mx-auto leading-relaxed">
+                    Al término de la ceremonia, ofreceremos un brindis
+                </p>
+                <p class="font-sans font-semibold text-lg text-neutral-800 mt-2 tracking-wider">
+                    21:00 Hs.
+                </p>
+            </div>
+        </section>
+        <!-- END: ItinerarySection -->
+        <!-- BEGIN: GiftSection -->
+        <section class="px-6 sm:px-10 py-10 bg-ivory-surface text-center relative border-y border-[#EBE3D3]"
+            data-purpose="gifts-section">
+            <!-- Gift Box Icon -->
+            <div class="flex justify-center mb-4">
+                <svg class="w-16 h-16 text-terracotta stroke-current fill-none" stroke-width="1.6" viewbox="0 0 70 70">
+                    <rect height="28" rx="2" width="34" x="18" y="30"></rect>
+                    <path d="M14 24 L 56 24 L 54 30 L 16 30 Z"></path>
+                    <line x1="35" x2="35" y1="24" y2="58"></line>
+                    <!-- Bow -->
+                    <path d="M35 24 C 30 16, 20 18, 25 24 C 30 24, 34 24, 35 24 Z"></path>
+                    <path d="M35 24 C 40 16, 50 18, 45 24 C 40 24, 36 24, 35 24 Z"></path>
+                </svg>
+            </div>
+            <h4 class="font-serif text-xl sm:text-2xl text-neutral-800 italic mb-1">
+                ¿El mejor regalo?
+            </h4>
+            <p class="font-sans font-semibold text-base sm:text-lg text-neutral-800 mb-4 tracking-wide">
+                ¡Tu presencia!
+            </p>
+            <p class="font-serif text-base text-neutral-600 max-w-xs mx-auto mb-6">
+                Si deseas hacernos un obsequio:
+            </p>
+            <!-- Bank Details Badge Card with Copy Action -->
+            <div class="max-w-xs mx-auto bg-white rounded-2xl p-5 shadow-sm border border-[#E4DCCE] text-center"
+                data-purpose="bank-card">
+                <!-- Alias Pill -->
+                <div
+                    class="inline-block bg-terracotta text-white font-sans text-xs tracking-wider font-semibold py-1.5 px-4 rounded-full mb-3 shadow-xs">
+                    Alias : C.I. 3.740.611
+                </div>
+                <div class="space-y-1 font-serif text-neutral-700 text-lg">
+                    <p class="font-medium text-neutral-900">Cta. Banco Itau</p>
+                    <p class="tracking-wide">N° xxxxxxxxxx</p>
+                    <p class="italic text-base text-neutral-600">Gabriela Encina</p>
+                </div>
+                <!-- Copy Alias Action Button -->
+                <button aria-label="Copiar datos bancarios"
+                    class="mt-4 inline-flex items-center justify-center space-x-2 text-xs font-sans font-semibold uppercase tracking-wider text-terracotta border border-terracotta/40 hover:bg-terracotta hover:text-white px-4 py-2 rounded-lg transition-all duration-200 w-full"
+                    id="copyBtn" onclick="copyBankingDetails()">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+                    </svg>
+                    <span id="copyBtnText">Copiar Datos Bancarios</span>
+                </button>
+            </div>
+        </section>
+        <!-- END: GiftSection -->
+        <!-- BEGIN: DressCodeSection -->
+        <section class="px-6 sm:px-10 py-12 bg-white text-center relative" data-purpose="dress-code">
+            <h3 class="font-serif text-3xl sm:text-4xl text-terracotta font-normal mb-2">
+                Dress Code:
+            </h3>
+            <p class="font-serif italic text-xl text-neutral-800 mb-10">
+                Elegante, formal y discreto.
+            </p>
+            <!-- Grid for Damas / Illustration / Caballeros -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center max-w-lg mx-auto">
+                <!-- Damas Recommendations -->
+                <div class="order-2 md:order-1 text-center md:text-right space-y-2">
+                    <h4 class="font-script text-4xl text-olive-dark">Damas</h4>
+                    <p class="font-serif text-sm sm:text-base text-neutral-600 leading-snug">
+                        Vestido largo.<br />
+                        Tacones cerrados<br />
+                        o abiertos.<br />
+                        Accesorios acorde.
+                    </p>
+                </div>
+                <!-- Illustrated Couple Figurine -->
+                <div class="order-1 md:order-2 flex justify-center py-2" data-purpose="attire-illustration">
+                    <div
+                        class="relative w-36 h-56 bg-ivory-surface rounded-2xl flex items-center justify-center p-3 border border-delicate shadow-inner overflow-hidden">
+                        <!-- Watercolor Styled Couple Silhouette Drawing -->
+                        <svg class="w-full h-full" fill="none" viewbox="0 0 160 220" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Bride in Deep Emerald Green Dress -->
+                            <g id="bride">
+                                <!-- Hair & Head -->
+                                <circle cx="68" cy="40" fill="#523927" r="9"></circle>
+                                <circle cx="67" cy="42" fill="#E8CBB8" r="7.5"></circle>
+                                <!-- Neck & Shoulder -->
+                                <path d="M64 48 L 70 48 L 72 58 L 60 58 Z" fill="#E8CBB8"></path>
+                                <!-- Long Flowing Emerald Dress -->
+                                <path d="M60 56 Q 48 70 45 95 L 40 170 Q 60 175 76 170 L 74 95 Q 72 70 68 56 Z"
+                                    fill="#1C5E51" opacity="0.95"></path>
+                                <!-- Pleats / Folds in Dress -->
+                                <path d="M52 85 Q 48 120 46 170" opacity="0.6" stroke="#13473D" stroke-width="1.8">
+                                </path>
+                                <path d="M60 82 Q 58 125 58 171" opacity="0.6" stroke="#13473D" stroke-width="1.5">
+                                </path>
+                                <path d="M68 85 Q 68 125 70 170" opacity="0.6" stroke="#13473D" stroke-width="1.8">
+                                </path>
+                                <!-- Clutch bag -->
+                                <ellipse cx="68" cy="115" fill="#13362E" rx="5" ry="6"></ellipse>
+                            </g>
+                            <!-- Groom in Navy Formal Suit -->
+                            <g id="groom">
+                                <!-- Hair & Head -->
+                                <circle cx="95" cy="36" fill="#3D291D" r="9"></circle>
+                                <circle cx="95" cy="38" fill="#E2C4B1" r="7.5"></circle>
+                                <!-- White Shirt & Tie -->
+                                <polygon fill="#FFFFFF" points="91,48 99,48 96,68 94,68"></polygon>
+                                <polygon fill="#2E4A62" points="94,49 96,49 95,64"></polygon>
+                                <!-- Blue Jacket / Blazer -->
+                                <path d="M84 48 Q 95 47 106 48 L 112 110 L 98 110 L 95 80 L 92 110 L 78 110 Z"
+                                    fill="#385472"></path>
+                                <!-- Trouser (Navy Blue / Slate) -->
+                                <path d="M82 108 L 84 185 L 93 185 L 95 125 L 97 185 L 106 185 L 108 108 Z"
+                                    fill="#334B64"></path>
+                                <!-- Formal Shoes -->
+                                <ellipse cx="88" cy="188" fill="#422517" rx="6" ry="3.5"></ellipse>
+                                <ellipse cx="102" cy="188" fill="#422517" rx="6" ry="3.5"></ellipse>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+                <!-- Caballeros Recommendations -->
+                <div class="order-3 text-center md:text-left space-y-2">
+                    <h4 class="font-script text-4xl text-olive-dark">Caballeros</h4>
+                    <p class="font-serif text-sm sm:text-base text-neutral-600 leading-snug">
+                        Traje formal.<br />
+                        Corbata a tono.<br />
+                        Zapatos cerrados.<br />
+                        Accesorios acorde.
+                    </p>
+                </div>
+            </div>
+            <!-- Bridesmaids Color Palette -->
+            <div class="mt-14 pt-8 border-t border-[#ECE4D5]" data-purpose="bridesmaids-palette">
+                <h4 class="font-script text-4xl sm:text-5xl text-terracotta mb-6">
+                    Damas de Honor
+                </h4>
+                <div class="flex justify-center items-center space-x-5">
+                    <!-- Color Swatch 1: Terracotta -->
+                    <div class="text-center group">
+                        <div
+                            class="w-14 h-16 sm:w-16 sm:h-20 bg-[#B85323] rounded-md shadow-md border-2 border-white ring-1 ring-neutral-200 transition-transform group-hover:scale-105">
+                        </div>
+                        <span
+                            class="block text-[11px] font-sans uppercase tracking-widest text-neutral-500 mt-2 font-medium">Terracota</span>
+                    </div>
+                    <!-- Color Swatch 2: Warm Olive / Sage -->
+                    <div class="text-center group">
+                        <div
+                            class="w-14 h-16 sm:w-16 sm:h-20 bg-[#697755] rounded-md shadow-md border-2 border-white ring-1 ring-neutral-200 transition-transform group-hover:scale-105">
+                        </div>
+                        <span
+                            class="block text-[11px] font-sans uppercase tracking-widest text-neutral-500 mt-2 font-medium">Oliva</span>
+                    </div>
+                </div>
+                <p class="font-serif italic text-sm text-neutral-500 mt-4 max-w-xs mx-auto">
+                    Paleta reservada especialmente con cariño para las Damas de Honor.
+                </p>
+            </div>
+        </section>
+        <!-- END: DressCodeSection -->
+        <!-- BEGIN: RSVPSection -->
+        <section class="bg-ivory text-neutral-800 relative z-10 border-t border-[#EBE3D3]" data-purpose="rsvp-module"
+            id="rsvp-section">
+            <!-- Direct Contact Header Banner -->
+            <div class="bg-terracotta text-white py-6 px-6 text-center">
+                <p class="font-serif text-lg sm:text-xl font-normal leading-snug">
+                    Confirma tu asistencia en el formulario
+                    <span class="font-semibold underline decoration-white/50">FORMULARIO DE ASISTENCIA</span>
+                </p>
+            </div>
+            <!-- Interactive RSVP Form Card -->
+            <div class="p-6 sm:p-10">
+                <div class="max-w-md mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-[#E9E1D2]">
+                    <div class="text-center mb-6">
+                        <span class="text-xs uppercase tracking-widest font-sans font-semibold text-olive">R. S. V.
+                            P.</span>
+                        <h3 class="font-serif text-2xl sm:text-3xl text-neutral-800 mt-1">Confirmar Asistencia</h3>
+                        <p class="font-serif italic text-sm text-neutral-500 mt-1">Por favor confirma antes del 20 de
+                            noviembre de 2026</p>
+                    </div>
+                    <form class="space-y-4" id="rsvpForm" onsubmit="handleRSVPSubmit(event)">
+                        <!-- Full Name -->
+                        <div>
+                            <label
+                                class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1"
+                                for="fullName">
+                                Nombre Completo *
+                            </label>
+                            <input
+                                class="w-full text-sm rounded-lg border-neutral-300 focus:border-terracotta focus:ring-terracotta py-2.5 px-3 bg-neutral-50/50"
+                                id="fullName" name="fullName" placeholder="Ej. Juan Pérez" required="" type="text" />
+                        </div>
+                        <!-- WhatsApp / Phone -->
+                        <div>
+                            <label
+                                class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1"
+                                for="phone">
+                                Teléfono / WhatsApp *
+                            </label>
+                            <input
+                                class="w-full text-sm rounded-lg border-neutral-300 focus:border-terracotta focus:ring-terracotta py-2.5 px-3 bg-neutral-50/50"
+                                id="phone" name="phone" placeholder="Ej. +595 981 123456" required="" type="tel" />
+                        </div>
+                        <!-- Attendance Choice -->
+                        <div>
+                            <label
+                                class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-2">
+                                ¿Asistirás? *
+                            </label>
+                            <div class="grid grid-cols-2 gap-3">
+                                <label
+                                    class="flex items-center justify-center p-3 border rounded-lg cursor-pointer transition hover:bg-neutral-50 has-[:checked]:border-terracotta has-[:checked]:bg-terracotta/5">
+                                    <input class="text-terracotta focus:ring-terracotta mr-2" name="attendance"
+                                        required="" type="radio" value="si" />
+                                    <span class="text-xs sm:text-sm font-medium text-neutral-800">¡Sí, con gusto!</span>
+                                </label>
+                                <label
+                                    class="flex items-center justify-center p-3 border rounded-lg cursor-pointer transition hover:bg-neutral-50 has-[:checked]:border-neutral-400 has-[:checked]:bg-neutral-100">
+                                    <input class="text-neutral-500 focus:ring-neutral-400 mr-2" name="attendance"
+                                        type="radio" value="no" />
+                                    <span class="text-xs sm:text-sm font-medium text-neutral-600">No podré</span>
+                                </label>
+                            </div>
+                        </div>
+                        <!-- Guests Count -->
+                        <div>
+                            <label
+                                class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1"
+                                for="guests">
+                                Pases / Acompañantes
+                            </label>
+                            <select
+                                class="w-full text-sm rounded-lg border-neutral-300 focus:border-terracotta focus:ring-terracotta py-2.5 px-3 bg-neutral-50/50"
+                                id="guests" name="guests">
+                                <option value="1">1 Persona (Solo yo)</option>
+                                <option value="2">2 Personas (Con acompañante)</option>
+                                <!-- <option value="3">3 Personas</option> -->
+                            </select>
+                        </div>
+                        <!-- Dietary Requirements or Notes -->
+                        <div>
+                            <label
+                                class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1"
+                                for="dietary">
+                                Restricción alimentaria o dedicatoria
+                            </label>
+                            <textarea
+                                class="w-full text-sm rounded-lg border-neutral-300 focus:border-terracotta focus:ring-terracotta py-2 px-3 bg-neutral-50/50"
+                                id="dietary" name="dietary" placeholder="Ej. Celíaco, vegetariano o un lindo mensaje..."
+                                rows="2"></textarea>
+                        </div>
+                        <!-- Submit Button (Styled dark olive green like screenshot 'CLIC AQUÍ') -->
+                        <div class="pt-2">
+                            <button
+                                class="w-full bg-[#2F483D] hover:bg-[#23372E] text-white font-serif tracking-[0.2em] uppercase text-sm font-semibold py-3.5 px-6 rounded-full shadow-md hover:shadow-xl transition transform active:scale-95 duration-150"
+                                type="submit">
+                                CLIC AQUÍ PARA CONFIRMAR
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Success Notification (Hidden by default) -->
+                    <div class="hidden mt-4 p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-center"
+                        id="rsvpSuccess">
+                        <svg class="w-8 h-8 text-emerald-600 mx-auto mb-2" fill="none" stroke="currentColor"
+                            viewbox="0 0 24 24">
+                            <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            </path>
+                        </svg>
+                        <p class="font-serif text-lg text-emerald-900 font-semibold" id="feedbackTitle">¡Muchas Gracias!
+                        </p>
+                        <p class="font-sans text-xs text-emerald-700 mt-1" id="feedbackMessage">Tu respuesta ha sido
+                            registrada exitosamente.</p>
+                    </div>
+                </div>
+                <!-- WhatsApp Quick Link alternative -->
+                <div class="text-center mt-6">
+                    <p class="font-sans text-xs text-neutral-500 mb-2">¿Prefieres confirmar vía WhatsApp?</p>
+                    <a class="inline-flex items-center space-x-2 text-xs font-semibold text-olive hover:text-olive-dark underline tracking-wider uppercase"
+                        href="https://wa.me/595981000000?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Roxana%20y%20David"
+                        rel="noopener noreferrer" target="_blank">
+                        <svg class="w-4 h-4 fill-current" viewbox="0 0 24 24">
+                            <path
+                                d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.093-.178.193-.076.368.101.175.449.741.964 1.2.662.591 1.221.774 1.394.861.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.203c.044.072.044.419-.1.824z">
+                            </path>
+                        </svg>
+                        <!-- <span>Enviar mensaje directo al WP de Jeruti Eventos</span> -->
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- END: RSVPSection -->
+        <!-- BEGIN: FooterSection -->
+        <footer class="mt-auto bg-white py-10 px-6 text-center border-t border-[#ECE4D5] relative overflow-hidden"
+            data-purpose="footer">
+            <!-- Heart and Flourish Calligraphy Ornament (matching the 3rd screenshot ending) -->
+            <div class="flex justify-center items-center my-4" data-purpose="bottom-heart-flourish">
+                <svg class="w-48 h-16 text-terracotta" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Espirales de tallo (guirnalda izquierda) -->
+                    <g fill="none" stroke="#8E9C7B" stroke-width="1.1" stroke-linecap="round" opacity="0.9">
+                        <path d="M8 46 C 30 50, 55 44, 78 36 C 86 33, 93 31, 96 34"></path>
+                        <path d="M14 41 C 26 40, 38 36, 50 30 C 56 27, 62 25, 67 26"></path>
+                    </g>
+                    <!-- Hojas de la guirnalda izquierda -->
+                    <g fill="#6B7A58" opacity="0.85">
+                        <ellipse cx="24" cy="45" rx="6" ry="2.6" transform="rotate(-8 24 45)"></ellipse>
+                        <ellipse cx="38" cy="42" rx="6" ry="2.6" transform="rotate(-14 38 42)"></ellipse>
+                        <ellipse cx="52" cy="38" rx="6" ry="2.6" transform="rotate(-20 52 38)"></ellipse>
+                        <ellipse cx="66" cy="34" rx="5.5" ry="2.4" transform="rotate(-24 66 34)"></ellipse>
+                        <ellipse cx="26" cy="40.5" rx="5.5" ry="2.2" transform="rotate(-30 26 40.5)"></ellipse>
+                        <ellipse cx="44" cy="34" rx="5.5" ry="2.2" transform="rotate(-38 44 34)"></ellipse>
+                    </g>
+                    <!-- Mini-flores izquierda -->
+                    <g transform="translate(32 35)">
+                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(-24)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(-15)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(22)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="-4" cy="1" rx="4.2" ry="2.6" transform="rotate(13)" fill="#B85323" opacity="0.8"></ellipse>
+                        <circle cx="0" cy="0" r="1.5" fill="#D49A3D"></circle>
+                    </g>
+                    <g transform="translate(58 26)">
+                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(-22)" fill="#D49A3D" opacity="0.8"></ellipse>
+                        <ellipse cx="3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(-13)" fill="#D49A3D" opacity="0.8"></ellipse>
+                        <ellipse cx="1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(20)" fill="#D49A3D" opacity="0.8"></ellipse>
+                        <ellipse cx="-3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(11)" fill="#D49A3D" opacity="0.8"></ellipse>
+                        <circle cx="0" cy="0" r="1.3" fill="#B85323"></circle>
+                    </g>
+                    <g transform="translate(80 31)">
+                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(-20)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="2.8" cy="-1" rx="3" ry="1.9" transform="rotate(-12)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="1" cy="2.8" rx="1.9" ry="3" transform="rotate(18)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="-2.8" cy="1" rx="3" ry="1.9" transform="rotate(10)" fill="#B85323" opacity="0.75"></ellipse>
+                        <circle cx="0" cy="0" r="1.2" fill="#D49A3D"></circle>
+                    </g>
+
+                    <!-- Corazón entrelazado central (florido: pétalos alrededor) -->
+                    <g>
+                        <path class="fill-terracotta/10 stroke-terracotta"
+                            d="M100 50 C 95 41, 86 32, 90 22 C 94 12, 105 14, 100 27 C 96 16, 108 11, 112 21 C 116 32, 105 42, 100 50 Z"
+                            stroke-width="1.5"></path>
+                        <!-- Corona de pétalos alrededor del corazón -->
+                        <g transform="translate(100 24)">
+                            <ellipse cx="0" cy="-9" rx="3" ry="5" transform="rotate(-20)" fill="#B85323" opacity="0.7"></ellipse>
+                            <ellipse cx="10" cy="1" rx="5" ry="3" transform="rotate(84)" fill="#B85323" opacity="0.6"></ellipse>
+                            <ellipse cx="-10" cy="2" rx="5" ry="3" transform="rotate(96)" fill="#D49A3D" opacity="0.6"></ellipse>
+                            <ellipse cx="7.5" cy="-5.5" rx="3" ry="4.6" transform="rotate(28)" fill="#D49A3D" opacity="0.65"></ellipse>
+                            <ellipse cx="-8" cy="-4" rx="3" ry="4.6" transform="rotate(-30)" fill="#B85323" opacity="0.65"></ellipse>
+                            <ellipse cx="9" cy="7" rx="3" ry="4.4" transform="rotate(45)" fill="#B85323" opacity="0.5"></ellipse>
+                            <ellipse cx="-8.5" cy="6.5" rx="3" ry="4.4" transform="rotate(-48)" fill="#D49A3D" opacity="0.5"></ellipse>
+                        </g>
+                        <!-- Corazoncito superior relleno -->
+                        <path class="fill-terracotta"
+                            d="M98 8 C 96 4, 92 2, 94 -1 C 96 -3.5, 99 -2, 98 2 C 97 -2, 100.5 -4, 102 -0.5 C 103 4, 99 6, 98 8 Z"
+                            stroke-width="0.8" stroke="#934018" transform="translate(0 10)"></path>
+                    </g>
+
+                    <!-- Espirales de tallo (guirnalda derecha) -->
+                    <g fill="none" stroke="#8E9C7B" stroke-width="1.1" stroke-linecap="round" opacity="0.9">
+                        <path d="M104 34 C 107 31, 114 33, 122 36 C 145 44, 170 50, 192 46"></path>
+                        <path d="M108 38 C 116 34, 130 31, 142 33 C 148 34, 154 34, 158 33"></path>
+                    </g>
+                    <!-- Hojas de la guirnalda derecha -->
+                    <g fill="#6B7A58" opacity="0.85">
+                        <ellipse cx="176" cy="45" rx="6" ry="2.6" transform="rotate(8 176 45)"></ellipse>
+                        <ellipse cx="162" cy="42" rx="6" ry="2.6" transform="rotate(14 162 42)"></ellipse>
+                        <ellipse cx="148" cy="38" rx="6" ry="2.6" transform="rotate(20 148 38)"></ellipse>
+                        <ellipse cx="134" cy="35" rx="5.5" ry="2.4" transform="rotate(22 134 35)"></ellipse>
+                        <ellipse cx="174" cy="40.5" rx="5.5" ry="2.2" transform="rotate(30 174 40.5)"></ellipse>
+                        <ellipse cx="156" cy="34" rx="5.5" ry="2.2" transform="rotate(36 156 34)"></ellipse>
+                    </g>
+                    <!-- Mini-flores derecha -->
+                    <g transform="translate(118 32)">
+                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(20)" fill="#D49A3D" opacity="0.75"></ellipse>
+                        <ellipse cx="-2.8" cy="-1" rx="3" ry="1.9" transform="rotate(12)" fill="#D49A3D" opacity="0.75"></ellipse>
+                        <ellipse cx="-1" cy="2.8" rx="1.9" ry="3" transform="rotate(-18)" fill="#D49A3D" opacity="0.75"></ellipse>
+                        <ellipse cx="2.8" cy="1" rx="3" ry="1.9" transform="rotate(-10)" fill="#D49A3D" opacity="0.75"></ellipse>
+                        <circle cx="0" cy="0" r="1.2" fill="#B85323"></circle>
+                    </g>
+                    <g transform="translate(142 29)">
+                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(22)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="-3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(13)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="-1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(-20)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(-11)" fill="#B85323" opacity="0.8"></ellipse>
+                        <circle cx="0" cy="0" r="1.3" fill="#D49A3D"></circle>
+                    </g>
+                    <g transform="translate(168 38)">
+                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(24)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="-4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(15)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="-1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(-22)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="4" cy="1" rx="4.2" ry="2.6" transform="rotate(-13)" fill="#B85323" opacity="0.8"></ellipse>
+                        <circle cx="0" cy="0" r="1.5" fill="#D49A3D"></circle>
+                    </g>
+                </svg>
+            </div>
+            <div class="space-y-1">
+                <p class="font-script text-4xl text-terracotta">Gabriela &amp; Sixinio</p>
+                <p class="font-serif italic text-sm text-neutral-500">Con la bendición de Dios y nuestras familias.</p>
+                <p class="font-sans text-[11px] uppercase tracking-widest text-neutral-400 pt-3">27 · Octubre · 2027</p>
+            </div>
+        </footer>
+        <!-- END: FooterSection -->
+    </div>
+    <!-- END: PageWrapper -->
+    <!-- BEGIN: Interactive Scripts -->
+    <script data-purpose="countdown-logic">
+        // Wedding Date: May 9, 2026 19:30:00 Paraguay Time (UTC-4 / -3 approx)
+        const weddingDate = new Date('2026-05-09T19:30:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const difference = weddingDate - now;
+
+            if (difference > 0) {
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = String(days).padStart(2, '0');
+                document.getElementById('hours').innerText = String(hours).padStart(2, '0');
+                document.getElementById('minutes').innerText = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').innerText = String(seconds).padStart(2, '0');
+            } else {
+                document.getElementById('days').innerText = '00';
+                document.getElementById('hours').innerText = '00';
+                document.getElementById('minutes').innerText = '00';
+                document.getElementById('seconds').innerText = '00';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+    <script data-purpose="copy-clipboard-action">
+        function copyBankingDetails() {
+            const bankInfo = "Alias: C.I. 4.407.576\nBanco: Familiar\nCta N°: 3-12702746\nTitular: David Gavilán";
+
+            navigator.clipboard.writeText(bankInfo).then(() => {
+                const btnText = document.getElementById('copyBtnText');
+                const originalText = btnText.innerText;
+                btnText.innerText = "¡Copiado con Éxito!";
+
+                const btn = document.getElementById('copyBtn');
+                btn.classList.add('bg-terracotta', 'text-white');
+
+                setTimeout(() => {
+                    btnText.innerText = originalText;
+                    btn.classList.remove('bg-terracotta', 'text-white');
+                }, 2500);
+            }).catch(err => {
+                console.error('Error al copiar: ', err);
+            });
+        }
+    </script>
+    <script data-purpose="rsvp-form-handler">
+        function handleRSVPSubmit(event) {
+            event.preventDefault();
+
+            const form = document.getElementById('rsvpForm');
+            const name = document.getElementById('fullName').value.trim();
+            const attendance = form.querySelector('input[name="attendance"]:checked').value;
+            const guests = document.getElementById('guests').value;
+            const feedback = document.getElementById('rsvpSuccess');
+            const feedbackTitle = document.getElementById('feedbackTitle');
+            const feedbackMessage = document.getElementById('feedbackMessage');
+
+            if (attendance === 'si') {
+                Swal.fire({
+                    title: `¡Gracias por confirmar, ${name}!`,
+                    text: `Hemos registrado tu asistencia para ${guests} persona(s). ¡Será una noche inolvidable!`,
+                    icon: 'success',
+                    confirmButtonText: 'Cerrar'
+                });
+            } else {
+                Swal.fire({
+                    title: `Gracias por responder, ${name}`,
+                    text: `Lamentamos que no puedas acompañarnos físicamente, ¡pero celebraremos con tu cariño en el corazón!`,
+                    icon: 'info',
+                    confirmButtonText: 'Cerrar'
+                });
+            }
+
+            form.reset();
+        }
+    </script>
+    <!-- END: Interactive Scripts -->
+</body>
+
+</html>

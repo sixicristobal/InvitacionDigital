@@ -13,6 +13,15 @@ CREATE TABLE IF NOT EXISTS parejas (
     hora_boda TIME,
     mensaje_invitacion TEXT,
     token_acceso VARCHAR(64) NOT NULL UNIQUE,
+    banco_alias VARCHAR(100),
+    banco_nombre VARCHAR(100),
+    banco_cuenta VARCHAR(100),
+    banco_titular VARCHAR(100),
+    color_damas VARCHAR(20),
+    estilo VARCHAR(40) DEFAULT 'moderno-organico',
+    color_fondo VARCHAR(20) DEFAULT '#FDFBF7',
+    color_secundario VARCHAR(20) DEFAULT '#8A9A86',
+    color_acento VARCHAR(20) DEFAULT '#B76E79',
     fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -23,6 +32,9 @@ CREATE TABLE IF NOT EXISTS invitados (
     telefono VARCHAR(20),
     correo VARCHAR(150),
     cantidad_personas INT NOT NULL DEFAULT 1,
+    mesa VARCHAR(30) NULL,
+    llego TINYINT(1) NOT NULL DEFAULT 0,
+    hora_llegada DATETIME NULL,
     codigo_invitacion VARCHAR(64) NOT NULL UNIQUE,
     estado ENUM('pendiente','confirmado','rechazado') DEFAULT 'pendiente',
     mensaje TEXT,

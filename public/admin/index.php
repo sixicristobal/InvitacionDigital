@@ -1,7 +1,7 @@
 <?php
-require_once __DIR__ . '/../includes/functions.php';
+require_once __DIR__ . '/../../includes/functions.php';
 requiereLogin();
-$parejas = pdo()->query('SELECT * FROM parejas ORDER BY id_pareja')->fetchAll();
+$parejas = pdo()->query('SELECT * FROM parejas WHERE activo=1 ORDER BY id_pareja')->fetchAll();
 $stats = [];
 foreach ($parejas as $p) {
     $st = pdo()->prepare('SELECT estado, COUNT(*) c FROM invitados WHERE id_pareja=? GROUP BY estado');
@@ -16,12 +16,13 @@ $flash = getFlash();
 <html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dashboard - <?= APP_NAME ?></title>
 <link rel="stylesheet" href="<?= BASE_URL ?>/assets/css/style.css">
 </head>
 <body>
 <div class="layout">
-<?php include __DIR__.'/../includes/sidebar.php'; ?>
+<?php include __DIR__.'/../../includes/sidebar.php'; ?>
 <main class="content">
 <h2>Dashboard</h2>
 <?php if($flash): ?><div class="alert <?= $flash['tipo'] ?>"><?= h($flash['msg']) ?></div><?php endif; ?>
@@ -46,5 +47,3 @@ $flash = getFlash();
 </div>
 </body>
 </html>
-PHP
-echo done
