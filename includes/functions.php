@@ -47,3 +47,118 @@ function geocodeMap($direccion, $zoom=16){
     $result['img'] = 'data:image/png;base64,' . base64_encode($img);
     return $result;
 }
+
+function getParejaConfig(array $pareja): array {
+    $defaultConfig = [
+        'hero' => [
+            'subtitulo' => '¡Nos casamos!',
+            'foto_portada' => '',
+            'musica_url' => '',
+            'autoplay' => true,
+            'sobre_apertura' => true,
+        ],
+        'historia' => [
+            'activo' => false,
+            'titulo' => 'Nuestra Historia',
+            'texto' => '',
+        ],
+        'eventos' => [],
+        'vestimenta' => [
+            'activo' => false,
+            'codigo' => 'Formal / Elegante',
+            'nota' => '',
+            'colores_evitar' => '',
+        ],
+        'galeria' => [],
+        'regalos' => [
+            'activo' => true,
+            'titulo' => 'Mesa de Regalos',
+            'mensaje' => '',
+            'link_externo' => '',
+        ],
+        'extras' => [
+            'permitir_cancion' => true,
+            'permitir_restriccion' => true,
+            'whatsapp_contacto' => '',
+            'mensaje_whatsapp' => 'Hola, tengo una consulta sobre la boda',
+        ],
+    ];
+
+    if (!empty($pareja['config_json'])) {
+        $stored = json_decode($pareja['config_json'], true);
+        if (is_array($stored)) {
+            $defaultConfig = array_replace_recursive($defaultConfig, $stored);
+        }
+    }
+    return $defaultConfig;
+}
+
+function subirArchivoMultimedia(array $file, int $idPareja, string $tipo = 'imagen'): ?string {
+    $uploadDir = __DIR__ . "/../assets/uploads/{$idPareja}/";
+    if (!is_dir($uploadDir)) {
+        mkdir($uploadDir, 0755, true);
+    }
+
+    $tmpName = $file['tmp_name'] ?? '';
+    $error = $file['error'] ?? UPLOAD_ERR_NO_FILE;
+    if ($error !== UPLOAD_OK || !$tmpName || !is_uploaded_file($tmpName)) {
+        return null;
+    }
+
+    $finfo = new finfo(FILEINFO_MIME_TYPE);
+    $mime = $finfo->file($tmpName);
+
+    if ($tipo === 'imagen') {
+        $allowedMimes = ['image/jpeg', 'image/png', 'image/webp'];
+        if (!in_array($mime, $allowedMimes, true)) {
+            return null;
+        }
+        $maxWidth = 1600;
+        $quality = 82;
+        $ext = '.webp';
+    } elseif ($tipo === 'audio') {
+        $allowedMimes = ['audio/mpeg', 'audio/mp3'];
+        if (!in_array($mime, $allowedMimes, true)) {
+            return null;
+        }
+        if ($file['size'] > 10 * 1024 * 1024) {
+            return null;
+        }
+        $ext = '.mp3';
+    } else {
+        return null;
+    }
+
+    $filename = bin2hex(random_bytes(8)) . $ext;
+    $destPath = $uploadDir . $filename;
+
+    if ($tipo === 'imagen') {
+        $src = null;
+        if ($mime === 'image/jpeg') $src = imagecreatefromjpeg($tmpName);
+        elseif ($mime === 'image/png') $src = imagecreatefrompng($tmpName);
+        elseif ($mime === 'image/webp') $src = imagecreatefromwebp($tmpName);
+
+        if (!$src) return null;
+
+        $srcW = imagesx($src);
+        $srcH = imagesy($src);
+
+        if ($srcW > $maxWidth) {
+            $newW = $maxWidth;
+            $newH = (int)round($srcH * $maxWidth / $srcW);
+            $dst = imagecreatetruecolor($newW, $newH);
+            imagecopyresampled($dst, $src, 0, 0, 0, 0, $newW, $newH, $srcW, $srcH);
+            imagedestroy($src);
+            $src = $dst;
+        }
+
+        $result = imagewebp($src, $destPath, $quality);
+        imagedestroy($src);
+        return $result ? "assets/uploads/{$idPareja}/{$filename}" : null;
+    } else {
+        if (move_uploaded_file($tmpName, $destPath)) {
+            return "assets/uploads/{$idPareja}/{$filename}";
+        }
+        return null;
+    }
+}

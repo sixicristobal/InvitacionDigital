@@ -11,9 +11,11 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['accion']) && $_POST['ac
     $tel = trim($_POST['telefono']);
     $correo = trim($_POST['correo']);
     $cant = (int)$_POST['cantidad_personas'];
+    $cancion = trim($_POST['cancion_sugerida'] ?? '');
+    $restriccion = trim($_POST['restriccion_alimentaria'] ?? '');
     $codigo = generarToken(16);
-    $st = $pdo->prepare('INSERT INTO invitados (id_pareja,nombre_completo,telefono,correo,cantidad_personas,codigo_invitacion) VALUES (?,?,?,?,?,?)');
-    $st->execute([$idp,$nombre,$tel,$correo,$cant,$codigo]);
+    $st = $pdo->prepare('INSERT INTO invitados (id_pareja,nombre_completo,telefono,correo,cantidad_personas,codigo_invitacion,cancion_sugerida,restriccion_alimentaria) VALUES (?,?,?,?,?,?,?,?)');
+    $st->execute([$idp,$nombre,$tel,$correo,$cant,$codigo,$cancion,$restriccion]);
     flash('Invitado agregado.');
     redirigir(ADMIN_URL.'/invitados.php?pareja='.$idp);
 }
@@ -54,13 +56,15 @@ foreach ($invitados as $i) $porPareja[$i['id_pareja']][] = $i;
 <input name="telefono" placeholder="Teléfono (WhatsApp)">
 <input name="correo" placeholder="Correo">
 <input type="number" name="cantidad_personas" value="1" min="1" required>
+<input name="cancion_sugerida" placeholder="Canción sugerida (opcional)">
+<input name="restriccion_alimentaria" placeholder="Restricción alimentaria (opcional)">
 <button type="submit">Agregar invitado</button>
 </form>
 <?php foreach ($parejas as $p): if (!isset($porPareja[$p['id_pareja']])) continue; ?>
 <h3><?= h($p['nombre_pareja']) ?> (<?= count($porPareja[$p['id_pareja']]) ?> invitados)</h3>
 <table class="table">
-<tr><th>Nombre</th><th>Tel</th><th>Personas</th><th>Estado</th><th>Link invitación</th><th>WhatsApp</th><th>Acciones</th></tr>
-<?php foreach($porPareja[$p['id_pareja']] as $i): 
+<tr><th>Nombre</th><th>Tel</th><th>Personas</th><th>Estado</th><th>Canción</th><th>Restricción</th><th>Link invitación</th><th>WhatsApp</th><th>Acciones</th></tr>
+<?php foreach($porPareja[$p['id_pareja']] as $i):
   $link = PUBLIC_URL.'/invitacion.php?codigo='.$i['codigo_invitacion'];
   $wa = 'https://wa.me/'.preg_replace('/\D/','',$i['telefono']).'?text='.urlencode('Hola '.explode(' ',$i['nombre_completo'])[0].', te invitamos a la boda. Confirma aquí: '.$link);
 ?>
@@ -69,6 +73,8 @@ foreach ($invitados as $i) $porPareja[$i['id_pareja']][] = $i;
 <td><?= h($i['telefono']) ?></td>
 <td><?= $i['cantidad_personas'] ?></td>
 <td><span class="badge <?= $i['estado'] ?>"><?= $i['estado'] ?></span></td>
+<td><?= h($i['cancion_sugerida'] ?? '') ?></td>
+<td><?= h($i['restriccion_alimentaria'] ?? '') ?></td>
 <td><a href="<?= $link ?>" target="_blank">Abrir</a></td>
 <td><a href="<?= $wa ?>" target="_blank">Enviar</a></td>
 <td><a href="?eliminar=<?= $i['id_invitado'] ?>" onclick="return confirm('¿Eliminar?')">Eliminar</a></td>

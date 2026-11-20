@@ -15,8 +15,9 @@ if (!$invitado) { http_response_code(404); echo 'Invitado no encontrado'; exit; 
 $qrData = $codigo;
 $qrPath = sys_get_temp_dir() . '/qr_' . $codigo . '.png';
 $writer = new \Endroid\QrCode\Writer\PngWriter();
-$qrCode = $writer->write($qrData, 200);
-$qrCode->saveToFile($qrPath);
+$qrCode = new \Endroid\QrCode\QrCode($qrData, new \Endroid\QrCode\Encoding\Encoding('UTF-8'), \Endroid\QrCode\ErrorCorrectionLevel::Low, 200);
+$result = $writer->write($qrCode);
+$result->saveToFile($qrPath);
 
 // Mapa de la iglesia
 $mapaIglesia = null;

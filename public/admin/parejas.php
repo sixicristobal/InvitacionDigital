@@ -103,8 +103,11 @@ $parejas = $pdo->query('SELECT * FROM parejas ORDER BY id_pareja')->fetchAll();
 <td><?= h($p['fecha_boda']) ?></td>
 <td><?= h($p['lugar_boda']) ?></td>
 <td><?= $p['activo']?'Activa':'Inactiva' ?></td>
-<td><a href="<?= PUBLIC_URL ?>/invitacion.php?token=<?= $p['token_acceso'] ?>" target="_blank">Ver</a></td>
-<td><form method="post" style="display:inline"><input type="hidden" name="accion" value="toggle"><input type="hidden" name="id_pareja" value="<?= $p['id_pareja'] ?>"><button type="submit"><?= $p['activo']?'Desactivar':'Activar' ?></button></form></td>
+    <td><a href="<?= PUBLIC_URL ?>/invitacion.php?token=<?= $p['token_acceso'] ?>" target="_blank">Ver</a></td>
+    <td>
+        <a class="btn" href="<?= ADMIN_URL ?>/configurar_invitacion.php?id=<?= $p['id_pareja'] ?>">Personalizar Invitación</a>
+        <form method="post" style="display:inline;margin-top:4px;"><input type="hidden" name="accion" value="toggle"><input type="hidden" name="id_pareja" value="<?= $p['id_pareja'] ?>"><button type="submit" class="btn secondary"><?= $p['activo']?'Desactivar':'Activar' ?></button></form>
+    </td>
 </tr>
 <?php endforeach; ?>
 </table>

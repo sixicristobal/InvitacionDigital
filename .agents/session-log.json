@@ -355,5 +355,79 @@
       "tokenEstimateHigh": 1216,
       "method": "heuristic"
     }
+  },
+  {
+    "ts": "2026-11-20T19:21:55.434Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "started",
+    "sessionId": "ses_e05977e23ffeojdzdoS3vB2siv"
+  },
+  {
+    "ts": "2026-11-20T19:22:17.368Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 4237,
+      "tokenEstimateHigh": 8475,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-20T20:16:02.613Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "started",
+    "sessionId": "ses_e0565f204ffeqKKYsbhq1KPsZ0"
+  },
+  {
+    "ts": "2026-11-20T20:16:20.401Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 4569,
+      "tokenEstimateHigh": 9140,
+      "method": "heuristic"
+    }
   }
 ]
