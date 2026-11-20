@@ -197,6 +197,26 @@ $tabUrl = function ($t) use ($parejaSel) {
         </form>
     </div>
 
+    <!-- Escáner QR -->
+    <div class="qr-scanner-section">
+        <div class="qr-scanner-card">
+            <h3>📷 Escanear QR</h3>
+            <div class="qr-reader">
+                <video id="qr-video" width="100%" playsinline></video>
+                <div id="qr-shutter" class="qr-shutter">📷</div>
+            </div>
+            <div class="qr-controls">
+                <button class="btn" id="qr-start">Iniciar cámara</button>
+                <button class="btn secondary" id="qr-stop" style="display:none">Detener</button>
+            </div>
+            <div class="qr-manual">
+                <input type="text" id="qr-manual-input" placeholder="O pegar código manualmente: ABC123" class="form-input">
+                <button class="btn" id="qr-manual-btn">✅ Marcar por código</button>
+            </div>
+            <div id="qr-status" class="qr-status"></div>
+        </div>
+    </div>
+
     <?php if ($q !== ''): ?>
         <h3>Resultados para "<?= h($q) ?>"</h3>
         <?php if (!$buscados): ?>
@@ -277,5 +297,89 @@ $tabUrl = function ($t) use ($parejaSel) {
 
 </main>
 </div>
+
+<script src="https://unpkg.com/html5-qrcode@2.3.12/html5-qrcode.min.js"></script>
+<script>
+(function() {
+    var video = document.getElementById('qr-video');
+    var startBtn = document.getElementById('qr-start');
+    var stopBtn = document.getElementById('qr-stop');
+    var manualInput = document.getElementById('qr-manual-input');
+    var manualBtn = document.getElementById('qr-manual-btn');
+    var statusEl = document.getElementById('qr-status');
+    var scanner = null;
+
+    function setStatus(msg, type) {
+        statusEl.textContent = msg;
+        statusEl.className = 'qr-status ' + (type || '');
+    }
+
+    function processCode(code) {
+        if (!code) return;
+        var fd = new FormData();
+        fd.append('codigo', code);
+        fetch('qr_checkin.php', { method: 'POST', body: fd })
+        .then(r => r.json())
+        .then(data => {
+            if (data.ok) {
+                setStatus('✓ ' + data.msg + ' — ' + data.invitado + ' (' + data.pareja + ')', 'success');
+                if (window.Swal) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '¡Llegada registrada!',
+                        text: data.invitado + ' · ' + data.pareja + ' · ' + data.personas + ' persona(s)',
+                        confirmButtonText: 'Eliminar',
+                        confirmButtonColor: '#2F483D'
+                    });
+                }
+                // Recargar la página para actualizaciones
+                setTimeout(function(){ location.reload(); }, 1500);
+            } else {
+                setStatus('⚠ ' + data.msg, 'error');
+            }
+        })
+        .catch(() => setStatus('Error de conexión', 'error'));
+    }
+
+    startBtn.addEventListener('click', function() {
+        if (scanner) return;
+        scanner = new Html5Qrcode('qr-video');
+        scanner.start(
+            { facingMode: 'environment' },
+            { fps: 10, qrbox: { width: 200, height: 200 } },
+            function(qrCode) {
+                stopScanner();
+                processCode(qrCode);
+            },
+            function(error) { /* ignore */ }
+        ).then(function() {
+            startBtn.style.display = 'none';
+            stopBtn.style.display = 'inline-block';
+            setStatus('Cámara activa. Escaneá el QR.', 'info');
+        }).catch(function(err) {
+            setStatus('No se pudo acceder a la cámara: ' + err, 'error');
+        });
+    });
+
+    function stopScanner() {
+        if (scanner) {
+            try { scanner.stop(); } catch(e) {}
+            scanner = null;
+            startBtn.style.display = 'inline-block';
+            stopBtn.style.display = 'none';
+        }
+    }
+
+    stopBtn.addEventListener('click', stopScanner);
+
+    manualBtn.addEventListener('click', function() {
+        processCode(manualInput.value.trim());
+    });
+
+    manualInput.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter') processCode(manualInput.value.trim());
+    });
+})();
+</script>
 </body>
 </html>

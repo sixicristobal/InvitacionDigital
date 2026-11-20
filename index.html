@@ -86,7 +86,7 @@
         }
     </style>
     <!-- END: Custom Styles -->
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="bg-ivory text-neutral-800 font-sans selection:bg-terracotta selection:text-white antialiased min-h-screen">
@@ -96,8 +96,8 @@
         <!-- Decorative Top Floral Banner Canvas / Graphic -->
         <div class="relative w-full overflow-hidden pointer-events-none select-none"
             data-purpose="decorative-header-art">
-            <svg class="w-full h-44 sm:h-52 text-terracotta" preserveaspectratio="xMaxYMin meet"
-                viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+            <svg class="w-full h-44 sm:h-52 text-terracotta" preserveaspectratio="xMaxYMin meet" viewBox="0 0 500 200"
+                xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <radialGradient cx="50%" cy="50%" id="petalGradRosa" r="60%">
                         <stop offset="0%" stop-color="#EFA98F" stop-opacity="0.95"></stop>
@@ -127,17 +127,23 @@
 
                 <!-- ===================== TALLOS Y FOLLAJE (esquina derecha) ===================== -->
                 <g stroke-linecap="round" fill="none">
-                    <path d="M500 60 C 460 85, 420 105, 355 118" stroke="url(#stemGradReal)" stroke-width="3" opacity="0.9"></path>
-                    <path d="M500 100 C 465 115, 430 128, 385 140 C 360 147, 330 150, 300 147" stroke="url(#stemGradReal)" stroke-width="2.4" opacity="0.85"></path>
-                    <path d="M490 30 C 462 48, 434 60, 396 62 C 368 64, 342 60, 318 50" stroke="url(#stemGradReal)" stroke-width="2.2" opacity="0.8"></path>
+                    <path d="M500 60 C 460 85, 420 105, 355 118" stroke="url(#stemGradReal)" stroke-width="3"
+                        opacity="0.9"></path>
+                    <path d="M500 100 C 465 115, 430 128, 385 140 C 360 147, 330 150, 300 147"
+                        stroke="url(#stemGradReal)" stroke-width="2.4" opacity="0.85"></path>
+                    <path d="M490 30 C 462 48, 434 60, 396 62 C 368 64, 342 60, 318 50" stroke="url(#stemGradReal)"
+                        stroke-width="2.2" opacity="0.8"></path>
                     <!-- Ramas de eucalipto -->
-                    <path d="M500 140 C 462 142, 430 152, 398 170" stroke="#7A8A67" stroke-width="2" opacity="0.8"></path>
-                    <path d="M500 175 C 470 172, 444 162, 418 146" stroke="#7A8A67" stroke-width="2" opacity="0.7"></path>
+                    <path d="M500 140 C 462 142, 430 152, 398 170" stroke="#7A8A67" stroke-width="2" opacity="0.8">
+                    </path>
+                    <path d="M500 175 C 470 172, 444 162, 418 146" stroke="#7A8A67" stroke-width="2" opacity="0.7">
+                    </path>
                 </g>
 
                 <!-- Hojas de eucalipto orgánicas -->
                 <g fill="#849474">
-                    <ellipse cx="452" cy="152" rx="11" ry="6.5" opacity="0.85" transform="rotate(-32 452 152)"></ellipse>
+                    <ellipse cx="452" cy="152" rx="11" ry="6.5" opacity="0.85" transform="rotate(-32 452 152)">
+                    </ellipse>
                     <ellipse cx="470" cy="143" rx="12" ry="7" opacity="0.8" transform="rotate(-18 470 143)"></ellipse>
                     <ellipse cx="436" cy="161" rx="10" ry="6" opacity="0.75" transform="rotate(-45 436 161)"></ellipse>
                     <ellipse cx="480" cy="166" rx="11" ry="6.5" opacity="0.8" transform="rotate(30 480 166)"></ellipse>
@@ -146,32 +152,50 @@
 
                 <!-- Hojas acuarela con nervadura -->
                 <g>
-                    <path d="M376 52 C 396 42, 424 40, 446 44 C 428 56, 400 62, 378 58 C 374 56, 374 54, 376 52 Z" fill="url(#leafGradReal)" opacity="0.9"></path>
-                    <path d="M380 55 C 400 51, 424 47, 442 45" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.7"></path>
-                    <path d="M398 52 L 396 44 M 414 49 L 414 41 M 430 47 L 432 41" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.5"></path>
+                    <path d="M376 52 C 396 42, 424 40, 446 44 C 428 56, 400 62, 378 58 C 374 56, 374 54, 376 52 Z"
+                        fill="url(#leafGradReal)" opacity="0.9"></path>
+                    <path d="M380 55 C 400 51, 424 47, 442 45" stroke="#4F6449" stroke-width="1" fill="none"
+                        opacity="0.7"></path>
+                    <path d="M398 52 L 396 44 M 414 49 L 414 41 M 430 47 L 432 41" stroke="#4F6449" stroke-width="0.8"
+                        fill="none" opacity="0.5"></path>
 
-                    <path d="M352 96 C 372 92, 400 96, 418 106 C 396 114, 370 114, 354 106 C 348 102, 348 99, 352 96 Z" fill="url(#leafGradReal)" opacity="0.85"></path>
-                    <path d="M356 101 C 378 102, 398 104, 414 107" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.65"></path>
-                    <path d="M374 101 L 375 96 M 390 104 L 392 98 M 404 106 L 408 101" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.45"></path>
+                    <path d="M352 96 C 372 92, 400 96, 418 106 C 396 114, 370 114, 354 106 C 348 102, 348 99, 352 96 Z"
+                        fill="url(#leafGradReal)" opacity="0.85"></path>
+                    <path d="M356 101 C 378 102, 398 104, 414 107" stroke="#4F6449" stroke-width="1" fill="none"
+                        opacity="0.65"></path>
+                    <path d="M374 101 L 375 96 M 390 104 L 392 98 M 404 106 L 408 101" stroke="#4F6449"
+                        stroke-width="0.8" fill="none" opacity="0.45"></path>
 
-                    <path d="M330 140 C 350 128, 380 122, 406 124 C 386 136, 356 144, 336 146 C 328 145, 326 143, 330 140 Z" fill="url(#leafGradReal)" opacity="0.8"></path>
-                    <path d="M334 142 C 358 134, 382 128, 402 125" stroke="#4F6449" stroke-width="1" fill="none" opacity="0.6"></path>
-                    <path d="M354 136 L 356 130 M 374 131 L 378 125 M 392 127 L 396 122" stroke="#4F6449" stroke-width="0.8" fill="none" opacity="0.45"></path>
+                    <path
+                        d="M330 140 C 350 128, 380 122, 406 124 C 386 136, 356 144, 336 146 C 328 145, 326 143, 330 140 Z"
+                        fill="url(#leafGradReal)" opacity="0.8"></path>
+                    <path d="M334 142 C 358 134, 382 128, 402 125" stroke="#4F6449" stroke-width="1" fill="none"
+                        opacity="0.6"></path>
+                    <path d="M354 136 L 356 130 M 374 131 L 378 125 M 392 127 L 396 122" stroke="#4F6449"
+                        stroke-width="0.8" fill="none" opacity="0.45"></path>
 
                     <!-- Hoja en ángulo hacia arriba -->
-                    <path d="M470 30 C 458 18, 444 10, 426 6 C 442 18, 456 28, 470 34 C 472 34, 472 32, 470 30 Z" fill="url(#leafGradReal)" opacity="0.85"></path>
+                    <path d="M470 30 C 458 18, 444 10, 426 6 C 442 18, 456 28, 470 34 C 472 34, 472 32, 470 30 Z"
+                        fill="url(#leafGradReal)" opacity="0.85"></path>
                 </g>
 
                 <!-- ===================== ROSA GRANDE (pinza superior) ===================== -->
                 <g>
                     <!-- Pétalos traseros -->
-                    <path d="M368 92 C 356 76, 360 56, 376 44 C 380 60, 382 76, 378 92 C 376 96, 372 96, 368 92 Z" fill="url(#petalGradRosa)" opacity="0.85"></path>
-                    <path d="M382 94 C 380 74, 388 52, 404 40 C 408 60, 402 80, 392 96 C 388 100, 384 100, 382 94 Z" fill="url(#petalGradRosa)" opacity="0.9"></path>
+                    <path d="M368 92 C 356 76, 360 56, 376 44 C 380 60, 382 76, 378 92 C 376 96, 372 96, 368 92 Z"
+                        fill="url(#petalGradRosa)" opacity="0.85"></path>
+                    <path d="M382 94 C 380 74, 388 52, 404 40 C 408 60, 402 80, 392 96 C 388 100, 384 100, 382 94 Z"
+                        fill="url(#petalGradRosa)" opacity="0.9"></path>
                     <!-- Capa de pétalos central -->
-                    <path d="M370 90 C 362 72, 370 52, 388 44 C 400 56, 402 76, 394 92 C 388 98, 376 98, 370 90 Z" fill="url(#petalGradCream)" opacity="0.9"></path>
+                    <path d="M370 90 C 362 72, 370 52, 388 44 C 400 56, 402 76, 394 92 C 388 98, 376 98, 370 90 Z"
+                        fill="url(#petalGradCream)" opacity="0.9"></path>
                     <!-- Pétalos frontales con borde ondulado -->
-                    <path d="M366 88 C 358 82, 354 70, 360 60 C 368 50, 380 46, 390 50 C 386 62, 380 76, 374 88 C 372 92, 368 92, 366 88 Z" fill="url(#petalGradRosa)" opacity="0.72"></path>
-                    <path d="M396 88 C 402 80, 406 68, 402 56 C 396 48, 386 46, 380 48 C 386 62, 390 76, 390 86 C 392 92, 394 92, 396 88 Z" fill="url(#petalGradRosa)" opacity="0.72"></path>
+                    <path
+                        d="M366 88 C 358 82, 354 70, 360 60 C 368 50, 380 46, 390 50 C 386 62, 380 76, 374 88 C 372 92, 368 92, 366 88 Z"
+                        fill="url(#petalGradRosa)" opacity="0.72"></path>
+                    <path
+                        d="M396 88 C 402 80, 406 68, 402 56 C 396 48, 386 46, 380 48 C 386 62, 390 76, 390 86 C 392 92, 394 92, 396 88 Z"
+                        fill="url(#petalGradRosa)" opacity="0.72"></path>
                     <!-- Centro de la rosa: espiral -->
                     <circle cx="382" cy="68" r="6.5" fill="#5F3316" opacity="0.9"></circle>
                     <circle cx="382" cy="68" r="3.5" fill="#3D1E0A" opacity="0.95"></circle>
@@ -181,58 +205,89 @@
                     </g>
                     <!-- Estambres -->
                     <g stroke="#B85323" stroke-width="0.9" fill="#F7C04A" opacity="0.9">
-                        <line x1="376" y1="74" x2="372" y2="79"></line><circle cx="371.5" cy="80" r="1.1"></circle>
-                        <line x1="388" y1="74" x2="392" y2="79"></line><circle cx="393" cy="80" r="1.1"></circle>
-                        <line x1="374" y1="62" x2="370" y2="58"></line><circle cx="369.5" cy="57" r="1.1"></circle>
-                        <line x1="390" y1="60" x2="393" y2="56"></line><circle cx="393.5" cy="55" r="1.1"></circle>
+                        <line x1="376" y1="74" x2="372" y2="79"></line>
+                        <circle cx="371.5" cy="80" r="1.1"></circle>
+                        <line x1="388" y1="74" x2="392" y2="79"></line>
+                        <circle cx="393" cy="80" r="1.1"></circle>
+                        <line x1="374" y1="62" x2="370" y2="58"></line>
+                        <circle cx="369.5" cy="57" r="1.1"></circle>
+                        <line x1="390" y1="60" x2="393" y2="56"></line>
+                        <circle cx="393.5" cy="55" r="1.1"></circle>
                     </g>
                 </g>
 
                 <!-- ===================== ROSA AMARILLA/MELOCOTÓN (media, derecha) ===================== -->
                 <g>
-                    <path d="M436 96 C 426 86, 428 70, 440 62 C 450 56, 462 58, 468 66 C 470 76, 464 88, 452 94 C 446 98, 440 98, 436 96 Z" fill="url(#petalGradPeach)" opacity="0.85"></path>
-                    <path d="M442 88 C 436 78, 440 68, 448 64 C 454 62, 460 64, 462 70 C 462 78, 456 84, 448 88 C 444 90, 444 90, 442 88 Z" fill="url(#petalGradCream)" opacity="0.9"></path>
+                    <path
+                        d="M436 96 C 426 86, 428 70, 440 62 C 450 56, 462 58, 468 66 C 470 76, 464 88, 452 94 C 446 98, 440 98, 436 96 Z"
+                        fill="url(#petalGradPeach)" opacity="0.85"></path>
+                    <path
+                        d="M442 88 C 436 78, 440 68, 448 64 C 454 62, 460 64, 462 70 C 462 78, 456 84, 448 88 C 444 90, 444 90, 442 88 Z"
+                        fill="url(#petalGradCream)" opacity="0.9"></path>
                     <circle cx="452" cy="76" r="5" fill="#5A240C" opacity="0.9"></circle>
                     <circle cx="452" cy="76" r="2.6" fill="#3C1A09"></circle>
                     <g stroke="#F7C04A" stroke-width="0.9" fill="none" opacity="0.85">
                         <path d="M448 78 C 450 75, 454 75, 456 78"></path>
                     </g>
                     <g stroke="#934018" stroke-width="0.8" fill="#F7C04A" opacity="0.85">
-                        <line x1="446" y1="80" x2="443" y2="83"></line><circle cx="442.5" cy="84" r="1"></circle>
-                        <line x1="458" y1="80" x2="461" y2="83"></line><circle cx="461.5" cy="84" r="1"></circle>
-                        <line x1="452" y1="70" x2="452" y2="66"></line><circle cx="452" cy="65" r="1"></circle>
+                        <line x1="446" y1="80" x2="443" y2="83"></line>
+                        <circle cx="442.5" cy="84" r="1"></circle>
+                        <line x1="458" y1="80" x2="461" y2="83"></line>
+                        <circle cx="461.5" cy="84" r="1"></circle>
+                        <line x1="452" y1="70" x2="452" y2="66"></line>
+                        <circle cx="452" cy="65" r="1"></circle>
                     </g>
                 </g>
 
                 <!-- ===================== BOTÓN CERRADO (arriba, izquierda) ===================== -->
                 <g>
-                    <path d="M340 42 C 336 32, 340 20, 350 14 C 354 12, 358 13, 360 16 C 364 26, 362 36, 352 43 C 348 46, 344 46, 340 42 Z" fill="url(#petalGradPeach)" opacity="0.9"></path>
-                    <path d="M348 40 C 344 32, 345 24, 350 18 C 353 16, 355 16, 356 19 C 357 27, 355 33, 350 40 C 349 42, 348 42, 348 40 Z" fill="url(#petalGradCream)" opacity="0.85"></path>
+                    <path
+                        d="M340 42 C 336 32, 340 20, 350 14 C 354 12, 358 13, 360 16 C 364 26, 362 36, 352 43 C 348 46, 344 46, 340 42 Z"
+                        fill="url(#petalGradPeach)" opacity="0.9"></path>
+                    <path
+                        d="M348 40 C 344 32, 345 24, 350 18 C 353 16, 355 16, 356 19 C 357 27, 355 33, 350 40 C 349 42, 348 42, 348 40 Z"
+                        fill="url(#petalGradCream)" opacity="0.85"></path>
                     <!-- Cáliz verde -->
-                    <path d="M344 42 C 340 46, 336 50, 332 51 C 336 55, 342 55, 346 52 C 350 55, 356 55, 360 51 C 356 50, 350 47, 348 43 Z" fill="url(#leafGradReal)" opacity="0.95"></path>
+                    <path
+                        d="M344 42 C 340 46, 336 50, 332 51 C 336 55, 342 55, 346 52 C 350 55, 356 55, 360 51 C 356 50, 350 47, 348 43 Z"
+                        fill="url(#leafGradReal)" opacity="0.95"></path>
                 </g>
 
                 <!-- ===================== BOTÓN PEQUEÑO (derecha, abajo) ===================== -->
                 <g>
-                    <path d="M418 118 C 414 112, 415 104, 421 100 C 425 98, 429 99, 431 102 C 433 108, 430 114, 424 118 C 421 120, 420 120, 418 118 Z" fill="url(#petalGradPeach)" opacity="0.85"></path>
-                    <path d="M423 114 C 420 110, 420 106, 423 103 C 425 102, 427 103, 427 105 C 427 108, 426 111, 424 114 Z" fill="url(#petalGradCream)" opacity="0.85"></path>
-                    <path d="M419 118 C 417 121, 414 123, 411 124 C 414 126, 418 126, 421 124 C 424 126, 428 126, 431 123 C 428 122, 424 120, 423 118 Z" fill="url(#leafGradReal)" opacity="0.9"></path>
+                    <path
+                        d="M418 118 C 414 112, 415 104, 421 100 C 425 98, 429 99, 431 102 C 433 108, 430 114, 424 118 C 421 120, 420 120, 418 118 Z"
+                        fill="url(#petalGradPeach)" opacity="0.85"></path>
+                    <path
+                        d="M423 114 C 420 110, 420 106, 423 103 C 425 102, 427 103, 427 105 C 427 108, 426 111, 424 114 Z"
+                        fill="url(#petalGradCream)" opacity="0.85"></path>
+                    <path
+                        d="M419 118 C 417 121, 414 123, 411 124 C 414 126, 418 126, 421 124 C 424 126, 428 126, 431 123 C 428 122, 424 120, 423 118 Z"
+                        fill="url(#leafGradReal)" opacity="0.9"></path>
                 </g>
 
                 <!-- ===================== FLORES BLANCO-CREMA PEQUEÑAS (flores silvestres) ===================== -->
                 <g>
                     <g transform="translate(310, 74)">
-                        <ellipse cx="0" cy="-11" rx="6" ry="10" transform="rotate(-24)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
-                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
-                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(28)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
-                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(16)" fill="url(#petalGradCream)" opacity="0.8"></ellipse>
+                        <ellipse cx="0" cy="-11" rx="6" ry="10" transform="rotate(-24)" fill="url(#petalGradCream)"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="url(#petalGradCream)"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(28)" fill="url(#petalGradCream)"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(16)" fill="url(#petalGradCream)"
+                            opacity="0.8"></ellipse>
                         <circle cx="0" cy="0" r="3.6" fill="#D49A3D" opacity="0.95"></circle>
                     </g>
                     <g transform="translate(296, 46)">
-                        <ellipse cx="0" cy="-8" rx="4.5" ry="7.5" transform="rotate(-22)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
-                        <ellipse cx="7.5" cy="-2" rx="7.5" ry="4.5" transform="rotate(-16)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
-                        <ellipse cx="2" cy="7.5" rx="4.5" ry="7.5" transform="rotate(24)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
-                        <ellipse cx="-7.5" cy="2" rx="7.5" ry="4.5" transform="rotate(14)" fill="url(#petalGradCream)" opacity="0.7"></ellipse>
+                        <ellipse cx="0" cy="-8" rx="4.5" ry="7.5" transform="rotate(-22)" fill="url(#petalGradCream)"
+                            opacity="0.7"></ellipse>
+                        <ellipse cx="7.5" cy="-2" rx="7.5" ry="4.5" transform="rotate(-16)" fill="url(#petalGradCream)"
+                            opacity="0.7"></ellipse>
+                        <ellipse cx="2" cy="7.5" rx="4.5" ry="7.5" transform="rotate(24)" fill="url(#petalGradCream)"
+                            opacity="0.7"></ellipse>
+                        <ellipse cx="-7.5" cy="2" rx="7.5" ry="4.5" transform="rotate(14)" fill="url(#petalGradCream)"
+                            opacity="0.7"></ellipse>
                         <circle cx="0" cy="0" r="2.8" fill="#B85323" opacity="0.9"></circle>
                     </g>
                 </g>
@@ -249,7 +304,7 @@
         <header class="px-6 sm:px-10 text-center relative z-10 -mt-10 sm:-mt-12" data-purpose="hero-section">
             <!-- Spiritual / Romantic Quote -->
             <div class="max-w-xs mx-auto mb-8 text-neutral-600 font-serif italic text-base sm:text-lg leading-relaxed">
-                <p>“No es casualidad que nuestros caminos se hayan encontrado, Dios ha tejido hilos de oro entre
+                <p>“Porque has sido parte de nuestro camino, queremos que también lo seas de nuestro destino. Nos encantaría que nos acompañes a celebrar nuestra boda. ¡Hagamos de este día un recuerdo inolvidable! No es casualidad que nuestros caminos se hayan encontrado, Dios ha tejido hilos de oro entre
                     nosotros.”</p>
             </div>
             <!-- Monogram -->
@@ -358,10 +413,14 @@
                     <path d="M20 20 Q 50 70 30 140 T 70 200" fill="none" stroke="#8E9C7B" stroke-width="2"></path>
                     <!-- Flor 1: cinco pétalos reales -->
                     <g transform="translate(22 30)">
-                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(-30)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="9" cy="-3" rx="9" ry="5.5" transform="rotate(-20)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="3" cy="9" rx="5.5" ry="9" transform="rotate(28)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="-9" cy="2" rx="9" ry="5.5" transform="rotate(16)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(-30)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="9" cy="-3" rx="9" ry="5.5" transform="rotate(-20)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="3" cy="9" rx="5.5" ry="9" transform="rotate(28)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-9" cy="2" rx="9" ry="5.5" transform="rotate(16)" fill="#B85323" opacity="0.75">
+                        </ellipse>
                         <circle cx="0" cy="0" r="3" fill="#D49A3D" opacity="0.95"></circle>
                         <g stroke="#934018" stroke-width="0.7" opacity="0.8">
                             <line x1="0" y1="-3" x2="-1" y2="-5"></line>
@@ -373,31 +432,48 @@
                     <path d="M36 56 C 44 52, 54 52, 60 56 C 52 62, 42 61, 36 56 Z" fill="#6B7A58" opacity="0.8"></path>
                     <!-- Flor 2 -->
                     <g transform="translate(48 72)">
-                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(-26)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="8" cy="-3" rx="8" ry="5" transform="rotate(-18)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="3" cy="8" rx="5" ry="8" transform="rotate(24)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="-8" cy="2" rx="8" ry="5" transform="rotate(14)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(-26)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="8" cy="-3" rx="8" ry="5" transform="rotate(-18)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="3" cy="8" rx="5" ry="8" transform="rotate(24)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="-8" cy="2" rx="8" ry="5" transform="rotate(14)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
                         <circle cx="0" cy="0" r="2.8" fill="#934018" opacity="0.95"></circle>
                     </g>
                     <!-- Capullo -->
-                    <path d="M24 100 C 21 94, 22 86, 28 82 C 30 81, 33 82, 33 85 C 34 92, 32 98, 27 101 C 26 101, 25 101, 24 100 Z" fill="#B85323" opacity="0.7"></path>
-                    <path d="M24 101 C 22 104, 20 106, 17 107 C 20 109, 24 109, 26 107 C 28 109, 32 109, 35 106 C 31 105, 27 104, 26 101 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <path
+                        d="M24 100 C 21 94, 22 86, 28 82 C 30 81, 33 82, 33 85 C 34 92, 32 98, 27 101 C 26 101, 25 101, 24 100 Z"
+                        fill="#B85323" opacity="0.7"></path>
+                    <path
+                        d="M24 101 C 22 104, 20 106, 17 107 C 20 109, 24 109, 26 107 C 28 109, 32 109, 35 106 C 31 105, 27 104, 26 101 Z"
+                        fill="#6B7A58" opacity="0.85"></path>
                     <!-- Flor 3 -->
                     <g transform="translate(25 110)">
-                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(15)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="10" cy="-3" rx="10" ry="6" transform="rotate(-18)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="3" cy="10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-10" cy="2" rx="10" ry="6" transform="rotate(15)" fill="#B85323" opacity="0.75">
+                        </ellipse>
                         <circle cx="0" cy="0" r="3.4" fill="#D49A3D" opacity="0.95"></circle>
                     </g>
                     <!-- Hoja baja -->
-                    <path d="M44 138 C 54 134, 64 134, 70 140 C 60 145, 50 144, 44 138 Z" fill="#6B7A58" opacity="0.8"></path>
+                    <path d="M44 138 C 54 134, 64 134, 70 140 C 60 145, 50 144, 44 138 Z" fill="#6B7A58" opacity="0.8">
+                    </path>
                     <!-- Flor 4 -->
                     <g transform="translate(55 165)">
-                        <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(-24)" fill="#8E9C7B" opacity="0.85"></ellipse>
-                        <ellipse cx="7" cy="-3" rx="7" ry="4.5" transform="rotate(-16)" fill="#8E9C7B" opacity="0.85"></ellipse>
-                        <ellipse cx="3" cy="7" rx="4.5" ry="7" transform="rotate(22)" fill="#8E9C7B" opacity="0.85"></ellipse>
-                        <ellipse cx="-7" cy="2" rx="7" ry="4.5" transform="rotate(13)" fill="#8E9C7B" opacity="0.85"></ellipse>
+                        <ellipse cx="0" cy="-7" rx="4.5" ry="7" transform="rotate(-24)" fill="#8E9C7B" opacity="0.85">
+                        </ellipse>
+                        <ellipse cx="7" cy="-3" rx="7" ry="4.5" transform="rotate(-16)" fill="#8E9C7B" opacity="0.85">
+                        </ellipse>
+                        <ellipse cx="3" cy="7" rx="4.5" ry="7" transform="rotate(22)" fill="#8E9C7B" opacity="0.85">
+                        </ellipse>
+                        <ellipse cx="-7" cy="2" rx="7" ry="4.5" transform="rotate(13)" fill="#8E9C7B" opacity="0.85">
+                        </ellipse>
                         <circle cx="0" cy="0" r="2.6" fill="#D49A3D" opacity="0.9"></circle>
                     </g>
                 </svg>
@@ -407,20 +483,28 @@
                     <path d="M80 10 Q 40 70 70 130 T 30 190" fill="none" stroke="#8E9C7B" stroke-width="2"></path>
                     <!-- Flor 1 -->
                     <g transform="translate(75 25)">
-                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(28)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="-9" cy="-3" rx="9" ry="5.5" transform="rotate(18)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="-3" cy="9" rx="5.5" ry="9" transform="rotate(-26)" fill="#D49A3D" opacity="0.7"></ellipse>
-                        <ellipse cx="9" cy="2" rx="9" ry="5.5" transform="rotate(-15)" fill="#D49A3D" opacity="0.7"></ellipse>
+                        <ellipse cx="0" cy="-9" rx="5.5" ry="9" transform="rotate(28)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="-9" cy="-3" rx="9" ry="5.5" transform="rotate(18)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="-3" cy="9" rx="5.5" ry="9" transform="rotate(-26)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="9" cy="2" rx="9" ry="5.5" transform="rotate(-15)" fill="#D49A3D" opacity="0.7">
+                        </ellipse>
                         <circle cx="0" cy="0" r="3" fill="#B85323" opacity="0.95"></circle>
                     </g>
                     <!-- Hoja -->
                     <path d="M62 50 C 54 46, 44 46, 38 50 C 46 56, 56 55, 62 50 Z" fill="#6B7A58" opacity="0.8"></path>
                     <!-- Flor 2 (grande) -->
                     <g transform="translate(45 80)">
-                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="-10" cy="-3" rx="10" ry="6" transform="rotate(17)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="-3" cy="10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="10" cy="2" rx="10" ry="6" transform="rotate(-14)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="0" cy="-10" rx="6" ry="10" transform="rotate(26)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-10" cy="-3" rx="10" ry="6" transform="rotate(17)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-3" cy="10" rx="6" ry="10" transform="rotate(-28)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="10" cy="2" rx="10" ry="6" transform="rotate(-14)" fill="#B85323" opacity="0.75">
+                        </ellipse>
                         <circle cx="0" cy="0" r="3.4" fill="#D49A3D" opacity="0.95"></circle>
                         <g stroke="#934018" stroke-width="0.7" opacity="0.8">
                             <line x1="0" y1="-3" x2="-1" y2="-5"></line>
@@ -429,20 +513,129 @@
                         </g>
                     </g>
                     <!-- Capullo -->
-                    <path d="M74 124 C 76 117, 75 110, 70 106 C 68 105, 65 106, 65 109 C 64 116, 66 122, 71 125 C 72 125, 73 125, 74 124 Z" fill="#B85323" opacity="0.7"></path>
-                    <path d="M74 125 C 76 128, 78 130, 81 131 C 78 133, 74 133, 72 131 C 70 133, 66 133, 63 130 C 67 129, 71 128, 72 125 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <path
+                        d="M74 124 C 76 117, 75 110, 70 106 C 68 105, 65 106, 65 109 C 64 116, 66 122, 71 125 C 72 125, 73 125, 74 124 Z"
+                        fill="#B85323" opacity="0.7"></path>
+                    <path
+                        d="M74 125 C 76 128, 78 130, 81 131 C 78 133, 74 133, 72 131 C 70 133, 66 133, 63 130 C 67 129, 71 128, 72 125 Z"
+                        fill="#6B7A58" opacity="0.85"></path>
                     <!-- Flor 3 -->
                     <g transform="translate(72 135)">
-                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(26)" fill="#B85323" opacity="0.7"></ellipse>
-                        <ellipse cx="-8" cy="-3" rx="8" ry="5" transform="rotate(16)" fill="#B85323" opacity="0.7"></ellipse>
-                        <ellipse cx="-3" cy="8" rx="5" ry="8" transform="rotate(-24)" fill="#B85323" opacity="0.7"></ellipse>
-                        <ellipse cx="8" cy="2" rx="8" ry="5" transform="rotate(-14)" fill="#B85323" opacity="0.7"></ellipse>
+                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(26)" fill="#B85323" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="-8" cy="-3" rx="8" ry="5" transform="rotate(16)" fill="#B85323" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="-3" cy="8" rx="5" ry="8" transform="rotate(-24)" fill="#B85323" opacity="0.7">
+                        </ellipse>
+                        <ellipse cx="8" cy="2" rx="8" ry="5" transform="rotate(-14)" fill="#B85323" opacity="0.7">
+                        </ellipse>
                         <circle cx="0" cy="0" r="2.8" fill="#D49A3D" opacity="0.9"></circle>
                     </g>
                     <!-- Hoja baja -->
-                    <path d="M52 162 C 42 158, 32 158, 26 164 C 36 169, 46 168, 52 162 Z" fill="#6B7A58" opacity="0.8"></path>
+                    <path d="M52 162 C 42 158, 32 158, 26 164 C 36 169, 46 168, 52 162 Z" fill="#6B7A58" opacity="0.8">
+                    </path>
                 </svg>
             </div>
+            <!-- Title: Ceremonia Religiosa -->
+<div class="text-center mb-8 relative z-10">
+    <h3 class="font-script text-5xl sm:text-6xl text-neutral-800 leading-none mb-4">
+        Ceremonia Religiosa
+    </h3>
+    <!-- Church Icon -->
+    <div class="flex justify-center my-3" data-purpose="church-icon">
+        <svg class="w-20 h-20 text-terracotta stroke-current fill-none" stroke-width="1.8"
+            viewbox="0 0 100 100">
+            <!-- Church Outline -->
+            <!-- Cross -->
+            <path d="M50 8 L50 20 M44 14 L56 14" stroke-linecap="round"></path>
+            <!-- Dome/Steeple -->
+            <path d="M38 34 C 38 24, 42 20, 50 20 C 58 20, 62 24, 62 34 Z"></path>
+            <!-- Steeple base -->
+            <path d="M38 34 L 38 48 L 62 48 L 62 34"></path>
+            <!-- Main body -->
+            <path d="M30 48 L 30 82 L 70 82 L 70 48 Z"></path>
+            <!-- Roof -->
+            <path d="M30 48 L 50 38 L 70 48"></path>
+            <!-- Door (arch) -->
+            <path d="M44 82 L 44 66 C 44 60, 56 60, 56 66 L 56 82"></path>
+            <!-- Round window (rose window) -->
+            <circle cx="50" cy="56" r="4"></circle>
+            <!-- Side windows left -->
+            <rect x="33" y="54" width="5" height="10" rx="1"></rect>
+            <!-- Side windows right -->
+            <rect x="62" y="54" width="5" height="10" rx="1"></rect>
+            <!-- Ground line -->
+            <path d="M26 82 L 74 82" stroke-linecap="round" stroke-width="2.5"></path>
+        </svg>
+    </div>
+    <div class="space-y-1 mb-6">
+        <p class="font-serif text-2xl text-neutral-800 tracking-wide font-normal uppercase">
+            Parroquia San José
+        </p>
+        <p class="font-serif text-xl text-neutral-600 italic">
+            Limpio, Paraguay
+        </p>
+        <p class="font-sans font-medium text-lg text-neutral-800 pt-1 tracking-wider">
+            19:00 Hs.
+        </p>
+    </div>
+    <!-- Google Maps Link Button -->
+    <a class="inline-block bg-terracotta hover:bg-terracotta-dark text-white font-sans text-xs tracking-[0.2em] uppercase font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 active:translate-y-0"
+        href="https://maps.app.goo.gl/2z9jGPmWSwab3Sot9" rel="noopener noreferrer" target="_blank">
+        Cómo Llegar
+    </a>
+</div>
+
+            <!-- Divider: Ceremonia Religiosa / Ceremonia Civil -->
+            <div class="flex items-center justify-center gap-4 my-10 relative z-10" aria-hidden="true"
+                data-purpose="ceremony-divider">
+                <span class="h-px w-16 sm:w-24 bg-[#ECE4D5]"></span>
+                <svg class="w-32 h-10 flex-shrink-0" fill="none" viewBox="0 0 140 44">
+                    <!-- Tallo -->
+                    <path d="M30 22 C 45 15, 95 15, 110 22" stroke="#8E9C7B" stroke-width="1.2" opacity="0.7"></path>
+                    <!-- Hojas -->
+                    <path d="M52 27 C 57 22, 64 21, 68 24 C 64 29, 57 29, 52 27 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <path d="M88 24 C 83 21, 76 22, 72 27 C 76 29, 83 29, 88 24 Z" fill="#6B7A58" opacity="0.85"></path>
+                    <!-- Flor mostaza izquierda -->
+                    <g transform="translate(44 20)">
+                        <ellipse cx="0" cy="-6" rx="3.6" ry="6" transform="rotate(-24)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="6" cy="-2" rx="6" ry="3.6" transform="rotate(-14)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="2" cy="6" rx="3.6" ry="6" transform="rotate(22)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-6" cy="2" rx="6" ry="3.6" transform="rotate(12)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
+                        <circle cx="0" cy="0" r="2" fill="#934018" opacity="0.9"></circle>
+                    </g>
+                    <!-- Flor verde derecha -->
+                    <g transform="translate(96 24)">
+                        <ellipse cx="0" cy="-5.5" rx="3.4" ry="5.5" transform="rotate(24)" fill="#8E9C7B" opacity="0.85">
+                        </ellipse>
+                        <ellipse cx="-5.5" cy="-2" rx="5.5" ry="3.4" transform="rotate(16)" fill="#8E9C7B"
+                            opacity="0.85"></ellipse>
+                        <ellipse cx="-2" cy="5.5" rx="3.4" ry="5.5" transform="rotate(-24)" fill="#8E9C7B"
+                            opacity="0.85"></ellipse>
+                        <ellipse cx="5.5" cy="2" rx="5.5" ry="3.4" transform="rotate(-13)" fill="#8E9C7B"
+                            opacity="0.85"></ellipse>
+                        <circle cx="0" cy="0" r="1.9" fill="#D49A3D" opacity="0.9"></circle>
+                    </g>
+                    <!-- Flor terracota central -->
+                    <g transform="translate(70 22)">
+                        <ellipse cx="0" cy="-8" rx="5" ry="8" transform="rotate(-28)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="8" cy="-3" rx="8" ry="5" transform="rotate(-18)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="3" cy="8" rx="5" ry="8" transform="rotate(26)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-8" cy="2" rx="8" ry="5" transform="rotate(15)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <circle cx="0" cy="0" r="2.8" fill="#D49A3D" opacity="0.95"></circle>
+                    </g>
+                </svg>
+                <span class="h-px w-16 sm:w-24 bg-[#ECE4D5]"></span>
+            </div>
+
             <!-- Title: Ceremonia Civil -->
             <div class="text-center mb-8 relative z-10">
                 <h3 class="font-script text-5xl sm:text-6xl text-neutral-800 leading-none mb-4">
@@ -494,12 +687,12 @@
                         Limpio, Paraguay
                     </p>
                     <p class="font-sans font-medium text-lg text-neutral-800 pt-1 tracking-wider">
-                        20:00 Hs.
+                        21:00 Hs.
                     </p>
                 </div>
                 <!-- Google Maps Link Button -->
                 <a class="inline-block bg-terracotta hover:bg-terracotta-dark text-white font-sans text-xs tracking-[0.2em] uppercase font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 active:translate-y-0"
-                    href="https://maps.app.goo.gl/2dtjbAao8mDtZct87" rel="noopener noreferrer" target="_blank">
+                    href="https://maps.app.goo.gl/bcAXxP48Ca7HJsx67" rel="noopener noreferrer" target="_blank">
                     Cómo Llegar
                 </a>
             </div>
@@ -563,12 +756,12 @@
                 <!-- Alias Pill -->
                 <div
                     class="inline-block bg-terracotta text-white font-sans text-xs tracking-wider font-semibold py-1.5 px-4 rounded-full mb-3 shadow-xs">
-                    Alias : C.I. 3.740.611
+                    Alias : __BANCO_ALIAS__
                 </div>
                 <div class="space-y-1 font-serif text-neutral-700 text-lg">
-                    <p class="font-medium text-neutral-900">Cta. Banco Itau</p>
-                    <p class="tracking-wide">N° xxxxxxxxxx</p>
-                    <p class="italic text-base text-neutral-600">Gabriela Encina</p>
+                    <p class="font-medium text-neutral-900">__BANCO_NOMBRE__</p>
+                    <p class="tracking-wide">N° __BANCO_CUENTA__</p>
+                    <p class="italic text-base text-neutral-600">__BANCO_TITULAR__</p>
                 </div>
                 <!-- Copy Alias Action Button -->
                 <button aria-label="Copiar datos bancarios"
@@ -663,12 +856,12 @@
                 </div>
             </div>
             <!-- Bridesmaids Color Palette -->
-            <div class="mt-14 pt-8 border-t border-[#ECE4D5]" data-purpose="bridesmaids-palette">
+            <!-- <div class="mt-14 pt-8 border-t border-[#ECE4D5]" data-purpose="bridesmaids-palette">
                 <h4 class="font-script text-4xl sm:text-5xl text-terracotta mb-6">
                     Damas de Honor
                 </h4>
                 <div class="flex justify-center items-center space-x-5">
-                    <!-- Color Swatch 1: Terracotta -->
+                 
                     <div class="text-center group">
                         <div
                             class="w-14 h-16 sm:w-16 sm:h-20 bg-[#B85323] rounded-md shadow-md border-2 border-white ring-1 ring-neutral-200 transition-transform group-hover:scale-105">
@@ -676,7 +869,7 @@
                         <span
                             class="block text-[11px] font-sans uppercase tracking-widest text-neutral-500 mt-2 font-medium">Terracota</span>
                     </div>
-                    <!-- Color Swatch 2: Warm Olive / Sage -->
+                   
                     <div class="text-center group">
                         <div
                             class="w-14 h-16 sm:w-16 sm:h-20 bg-[#697755] rounded-md shadow-md border-2 border-white ring-1 ring-neutral-200 transition-transform group-hover:scale-105">
@@ -688,7 +881,7 @@
                 <p class="font-serif italic text-sm text-neutral-500 mt-4 max-w-xs mx-auto">
                     Paleta reservada especialmente con cariño para las Damas de Honor.
                 </p>
-            </div>
+            </div> -->
         </section>
         <!-- END: DressCodeSection -->
         <!-- BEGIN: RSVPSection -->
@@ -705,8 +898,7 @@
             <div class="p-6 sm:p-10">
                 <div class="max-w-md mx-auto bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-[#E9E1D2]">
                     <div class="text-center mb-6">
-                        <span class="text-xs uppercase tracking-widest font-sans font-semibold text-olive">R. S. V.
-                            P.</span>
+                        <span class="text-xs uppercase tracking-widest font-sans font-semibold text-olive"></span>
                         <h3 class="font-serif text-2xl sm:text-3xl text-neutral-800 mt-1">Confirmar Asistencia</h3>
                         <p class="font-serif italic text-sm text-neutral-500 mt-1">Por favor confirma antes del 20 de
                             noviembre de 2026</p>
@@ -771,7 +963,8 @@
                             </select>
                         </div>
                         <!-- Dietary Requirements or Notes -->
-                        <div>
+                        <!-- Restricción alimentaria oculta -->
+                        <!-- <div>
                             <label
                                 class="block font-sans text-xs font-semibold text-neutral-700 uppercase tracking-wider mb-1"
                                 for="dietary">
@@ -781,7 +974,7 @@
                                 class="w-full text-sm rounded-lg border-neutral-300 focus:border-terracotta focus:ring-terracotta py-2 px-3 bg-neutral-50/50"
                                 id="dietary" name="dietary" placeholder="Ej. Celíaco, vegetariano o un lindo mensaje..."
                                 rows="2"></textarea>
-                        </div>
+                        </div> -->
                         <!-- Submit Button (Styled dark olive green like screenshot 'CLIC AQUÍ') -->
                         <div class="pt-2">
                             <button
@@ -806,7 +999,7 @@
                     </div>
                 </div>
                 <!-- WhatsApp Quick Link alternative -->
-                <div class="text-center mt-6">
+                <!-- <div class="text-center mt-6">
                     <p class="font-sans text-xs text-neutral-500 mb-2">¿Prefieres confirmar vía WhatsApp?</p>
                     <a class="inline-flex items-center space-x-2 text-xs font-semibold text-olive hover:text-olive-dark underline tracking-wider uppercase"
                         href="https://wa.me/595981000000?text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20la%20boda%20de%20Roxana%20y%20David"
@@ -816,9 +1009,9 @@
                                 d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.088.072.19.014.305-.058.115-.087.187-.173.289l-.26.309c-.087.093-.178.193-.076.368.101.175.449.741.964 1.2.662.591 1.221.774 1.394.861.174.086.275.073.376-.044.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.184.564.289.13.332.203c.044.072.044.419-.1.824z">
                             </path>
                         </svg>
-                        <!-- <span>Enviar mensaje directo al WP de Jeruti Eventos</span> -->
+                     
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- END: RSVPSection -->
@@ -844,24 +1037,36 @@
                     </g>
                     <!-- Mini-flores izquierda -->
                     <g transform="translate(32 35)">
-                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(-24)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(-15)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(22)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="-4" cy="1" rx="4.2" ry="2.6" transform="rotate(13)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(-24)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(-15)" fill="#B85323"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(22)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-4" cy="1" rx="4.2" ry="2.6" transform="rotate(13)" fill="#B85323" opacity="0.8">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.5" fill="#D49A3D"></circle>
                     </g>
                     <g transform="translate(58 26)">
-                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(-22)" fill="#D49A3D" opacity="0.8"></ellipse>
-                        <ellipse cx="3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(-13)" fill="#D49A3D" opacity="0.8"></ellipse>
-                        <ellipse cx="1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(20)" fill="#D49A3D" opacity="0.8"></ellipse>
-                        <ellipse cx="-3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(11)" fill="#D49A3D" opacity="0.8"></ellipse>
+                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(-22)" fill="#D49A3D"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(-13)" fill="#D49A3D"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(20)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(11)" fill="#D49A3D" opacity="0.8">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.3" fill="#B85323"></circle>
                     </g>
                     <g transform="translate(80 31)">
-                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(-20)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="2.8" cy="-1" rx="3" ry="1.9" transform="rotate(-12)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="1" cy="2.8" rx="1.9" ry="3" transform="rotate(18)" fill="#B85323" opacity="0.75"></ellipse>
-                        <ellipse cx="-2.8" cy="1" rx="3" ry="1.9" transform="rotate(10)" fill="#B85323" opacity="0.75"></ellipse>
+                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(-20)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="2.8" cy="-1" rx="3" ry="1.9" transform="rotate(-12)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="1" cy="2.8" rx="1.9" ry="3" transform="rotate(18)" fill="#B85323" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-2.8" cy="1" rx="3" ry="1.9" transform="rotate(10)" fill="#B85323" opacity="0.75">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.2" fill="#D49A3D"></circle>
                     </g>
 
@@ -872,13 +1077,20 @@
                             stroke-width="1.5"></path>
                         <!-- Corona de pétalos alrededor del corazón -->
                         <g transform="translate(100 24)">
-                            <ellipse cx="0" cy="-9" rx="3" ry="5" transform="rotate(-20)" fill="#B85323" opacity="0.7"></ellipse>
-                            <ellipse cx="10" cy="1" rx="5" ry="3" transform="rotate(84)" fill="#B85323" opacity="0.6"></ellipse>
-                            <ellipse cx="-10" cy="2" rx="5" ry="3" transform="rotate(96)" fill="#D49A3D" opacity="0.6"></ellipse>
-                            <ellipse cx="7.5" cy="-5.5" rx="3" ry="4.6" transform="rotate(28)" fill="#D49A3D" opacity="0.65"></ellipse>
-                            <ellipse cx="-8" cy="-4" rx="3" ry="4.6" transform="rotate(-30)" fill="#B85323" opacity="0.65"></ellipse>
-                            <ellipse cx="9" cy="7" rx="3" ry="4.4" transform="rotate(45)" fill="#B85323" opacity="0.5"></ellipse>
-                            <ellipse cx="-8.5" cy="6.5" rx="3" ry="4.4" transform="rotate(-48)" fill="#D49A3D" opacity="0.5"></ellipse>
+                            <ellipse cx="0" cy="-9" rx="3" ry="5" transform="rotate(-20)" fill="#B85323" opacity="0.7">
+                            </ellipse>
+                            <ellipse cx="10" cy="1" rx="5" ry="3" transform="rotate(84)" fill="#B85323" opacity="0.6">
+                            </ellipse>
+                            <ellipse cx="-10" cy="2" rx="5" ry="3" transform="rotate(96)" fill="#D49A3D" opacity="0.6">
+                            </ellipse>
+                            <ellipse cx="7.5" cy="-5.5" rx="3" ry="4.6" transform="rotate(28)" fill="#D49A3D"
+                                opacity="0.65"></ellipse>
+                            <ellipse cx="-8" cy="-4" rx="3" ry="4.6" transform="rotate(-30)" fill="#B85323"
+                                opacity="0.65"></ellipse>
+                            <ellipse cx="9" cy="7" rx="3" ry="4.4" transform="rotate(45)" fill="#B85323" opacity="0.5">
+                            </ellipse>
+                            <ellipse cx="-8.5" cy="6.5" rx="3" ry="4.4" transform="rotate(-48)" fill="#D49A3D"
+                                opacity="0.5"></ellipse>
                         </g>
                         <!-- Corazoncito superior relleno -->
                         <path class="fill-terracotta"
@@ -902,24 +1114,36 @@
                     </g>
                     <!-- Mini-flores derecha -->
                     <g transform="translate(118 32)">
-                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(20)" fill="#D49A3D" opacity="0.75"></ellipse>
-                        <ellipse cx="-2.8" cy="-1" rx="3" ry="1.9" transform="rotate(12)" fill="#D49A3D" opacity="0.75"></ellipse>
-                        <ellipse cx="-1" cy="2.8" rx="1.9" ry="3" transform="rotate(-18)" fill="#D49A3D" opacity="0.75"></ellipse>
-                        <ellipse cx="2.8" cy="1" rx="3" ry="1.9" transform="rotate(-10)" fill="#D49A3D" opacity="0.75"></ellipse>
+                        <ellipse cx="0" cy="-2.8" rx="1.9" ry="3" transform="rotate(20)" fill="#D49A3D" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-2.8" cy="-1" rx="3" ry="1.9" transform="rotate(12)" fill="#D49A3D" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="-1" cy="2.8" rx="1.9" ry="3" transform="rotate(-18)" fill="#D49A3D" opacity="0.75">
+                        </ellipse>
+                        <ellipse cx="2.8" cy="1" rx="3" ry="1.9" transform="rotate(-10)" fill="#D49A3D" opacity="0.75">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.2" fill="#B85323"></circle>
                     </g>
                     <g transform="translate(142 29)">
-                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(22)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="-3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(13)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="-1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(-20)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(-11)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="0" cy="-3.2" rx="2.1" ry="3.4" transform="rotate(22)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-3.2" cy="-1" rx="3.4" ry="2.1" transform="rotate(13)" fill="#B85323"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="-1" cy="3.2" rx="2.1" ry="3.4" transform="rotate(-20)" fill="#B85323"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="3.2" cy="1" rx="3.4" ry="2.1" transform="rotate(-11)" fill="#B85323" opacity="0.8">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.3" fill="#D49A3D"></circle>
                     </g>
                     <g transform="translate(168 38)">
-                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(24)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="-4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(15)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="-1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(-22)" fill="#B85323" opacity="0.8"></ellipse>
-                        <ellipse cx="4" cy="1" rx="4.2" ry="2.6" transform="rotate(-13)" fill="#B85323" opacity="0.8"></ellipse>
+                        <ellipse cx="0" cy="-4" rx="2.6" ry="4.2" transform="rotate(24)" fill="#B85323" opacity="0.8">
+                        </ellipse>
+                        <ellipse cx="-4" cy="-1.5" rx="4.2" ry="2.6" transform="rotate(15)" fill="#B85323"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="-1.5" cy="4" rx="2.6" ry="4.2" transform="rotate(-22)" fill="#B85323"
+                            opacity="0.8"></ellipse>
+                        <ellipse cx="4" cy="1" rx="4.2" ry="2.6" transform="rotate(-13)" fill="#B85323" opacity="0.8">
+                        </ellipse>
                         <circle cx="0" cy="0" r="1.5" fill="#D49A3D"></circle>
                     </g>
                 </svg>
@@ -965,7 +1189,8 @@
     </script>
     <script data-purpose="copy-clipboard-action">
         function copyBankingDetails() {
-            const bankInfo = "Alias: C.I. 4.407.576\nBanco: Familiar\nCta N°: 3-12702746\nTitular: David Gavilán";
+            const b = window.bankDetails || {};
+            const bankInfo = `Alias: ${b.alias || ''}\nBanco: ${b.banco || ''}\nCta N°: ${b.cuenta || ''}\nTitular: ${b.titular || ''}`;
 
             navigator.clipboard.writeText(bankInfo).then(() => {
                 const btnText = document.getElementById('copyBtnText');

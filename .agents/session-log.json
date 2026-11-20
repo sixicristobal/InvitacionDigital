@@ -1,0 +1,359 @@
+[
+  {
+    "ts": "2026-10-31T22:41:14.494Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "started",
+    "sessionId": "ses_e6be03315ffeuVWT1213SLrHTX"
+  },
+  {
+    "ts": "2026-10-31T22:41:29.310Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 3337,
+      "tokenEstimateHigh": 6676,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-11T00:36:06.781Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "started",
+    "sessionId": "ses_e37f77030ffeX2rPKT4z2R5aH0"
+  },
+  {
+    "ts": "2026-11-11T00:36:36.784Z",
+    "agent": "plan",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e37f77030ffeX2rPKT4z2R5aH0",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-11T00:37:16.121Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 96,
+      "tokenEstimateHigh": 194,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-11T00:38:48.038Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "started",
+    "sessionId": "ses_e37f4fa2affea3dMfv4OGpuOf7"
+  },
+  {
+    "ts": "2026-11-11T00:39:18.039Z",
+    "agent": "build",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e37f4fa2affea3dMfv4OGpuOf7",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-11T00:39:37.852Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "beam-free",
+      "providerID": "opencode",
+      "variant": "low"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 1230,
+      "tokenEstimateHigh": 2462,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-11T01:56:30.991Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "big-pickle",
+      "providerID": "opencode"
+    },
+    "action": "started",
+    "sessionId": "ses_e37add394ffekTFEKjeUrURa8X"
+  },
+  {
+    "ts": "2026-11-11T01:57:00.992Z",
+    "agent": "build",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "big-pickle",
+      "providerID": "opencode"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e37add394ffekTFEKjeUrURa8X",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-11T01:58:06.043Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "big-pickle",
+      "providerID": "opencode"
+    },
+    "action": "skill-loaded",
+    "skill": "browser-automation",
+    "source": "skill-tool"
+  },
+  {
+    "ts": "2026-11-11T01:58:25.258Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "big-pickle",
+      "providerID": "opencode"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [
+      "browser-automation"
+    ],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 18012,
+      "tokenEstimateHigh": 36025,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-20T12:43:20.666Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "started",
+    "sessionId": "ses_e07046738ffeR3glnH57mn4aA3"
+  },
+  {
+    "ts": "2026-11-20T12:43:28.786Z",
+    "agent": "explore",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi",
+      "variant": "default"
+    },
+    "action": "started",
+    "sessionId": "ses_e0704479fffeWJXYxAfJilvMRe"
+  },
+  {
+    "ts": "2026-11-20T12:43:50.677Z",
+    "agent": "plan",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e07046738ffeR3glnH57mn4aA3",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-20T12:43:58.825Z",
+    "agent": "explore",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi",
+      "variant": "default"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e0704479fffeWJXYxAfJilvMRe",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-20T12:45:42.750Z",
+    "agent": "explore",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi",
+      "variant": "default"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 54618,
+      "tokenEstimateHigh": 109237,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-20T12:47:43.267Z",
+    "agent": "plan",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 19096,
+      "tokenEstimateHigh": 38192,
+      "method": "heuristic"
+    }
+  },
+  {
+    "ts": "2026-11-20T14:19:59.187Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "started",
+    "sessionId": "ses_e06abeccaffeAKdGZoFHJQgjTU"
+  },
+  {
+    "ts": "2026-11-20T14:20:29.188Z",
+    "agent": "build",
+    "member": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "unmatched-session",
+    "sessionId": "ses_e06abeccaffeAKdGZoFHJQgjTU",
+    "warning": "Session started with no matching team_spawn record. Agent identity may be inaccurate."
+  },
+  {
+    "ts": "2026-11-20T14:20:58.866Z",
+    "agent": "build",
+    "member": null,
+    "agentType": null,
+    "team": null,
+    "model": {
+      "id": "auto",
+      "providerID": "freellmapi"
+    },
+    "action": "completed",
+    "filesEdited": 0,
+    "skills": [],
+    "intendedSkills": [],
+    "usage": {
+      "inputTokensReported": null,
+      "outputTokensReported": null,
+      "totalTokensReported": null,
+      "tokenEstimateLow": 607,
+      "tokenEstimateHigh": 1216,
+      "method": "heuristic"
+    }
+  }
+]

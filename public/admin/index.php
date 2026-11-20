@@ -38,8 +38,13 @@ $flash = getFlash();
         <span class="warn">Pendientes: <?= $s['pendiente'] ?></span>
         <span class="bad">Rechazados: <?= $s['rechazado'] ?></span>
     </div>
-    <a class="btn" href="<?= ADMIN_URL ?>/invitados.php?pareja=<?= $p['id_pareja'] ?>">Ver invitados</a>
+    <div class="stat-row">
+        <span>👥 Capacidad: <?= (int)$p['max_personas'] ?> persona(s)</span>
+        <span>✅ Confirmadas: <?= $s['confirmado'] ?> de <?= (int)$p['max_personas'] ?> persona(s)</span>
+    </div>
+<a class="btn" href="<?= ADMIN_URL ?>/invitados.php?pareja=<?= $p['id_pareja'] ?>">Ver invitados</a>
     <a class="btn secondary" href="<?= PUBLIC_URL ?>/invitacion.php?token=<?= $p['token_acceso'] ?>" target="_blank">Ver invitación</a>
+    <a class="btn" href="<?= ADMIN_URL ?>/asistencia.php?pareja=<?= $p['id_pareja'] ?>&tab=mesas">🪑 Configurar mesas</a>
 </div>
 <?php endforeach; ?>
 </div>

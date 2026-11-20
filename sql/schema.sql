@@ -1,5 +1,4 @@
--- Base de datos para invitaciones de boda (3 parejas)
--- MySQL 5.7 compatible
+-- Esquema inicial para invitaciones de boda en MariaDB 11.4.
 CREATE DATABASE IF NOT EXISTS boda_invitaciones CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE boda_invitaciones;
 
@@ -13,6 +12,7 @@ CREATE TABLE IF NOT EXISTS parejas (
     hora_boda TIME,
     mensaje_invitacion TEXT,
     token_acceso VARCHAR(64) NOT NULL UNIQUE,
+    activo TINYINT(1) NOT NULL DEFAULT 1,
     banco_alias VARCHAR(100),
     banco_nombre VARCHAR(100),
     banco_cuenta VARCHAR(100),
